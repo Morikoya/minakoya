@@ -5475,6 +5475,114 @@ h2.section-title {
   .room-bottom { grid-template-columns:1fr !important; padding:20px !important; gap:16px !important; }
   .room-bottom-right { align-items:stretch !important; }
 }
+
+/* ── Fix reveal for top-level section headings ── */
+.nb-teaser-head,
+.nb-teaser-head .reveal,
+.features-section .reveal:first-child,
+.exp-section .reveal:first-child,
+.rooms-section .reveal:first-child {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* nb-teaser padding: remove extra top space */
+.nb-teaser {
+  padding-top: 48px !important;
+}
+.nb-teaser-head {
+  padding-bottom: 40px !important;
+}
+
+/* ── Fix click blocking ── */
+/* room-top-fp is display only, no clicks needed */
+.room-top-fp {
+  pointer-events: none !important;
+}
+/* All interactive elements stay clickable */
+.room-tab, .room-tab * {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+.sl-btn, .sl-dot {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+/* room-tabs always on top */
+.room-tabs {
+  position: sticky !important;
+  top: 58px !important;
+  z-index: 200 !important;
+  pointer-events: auto !important;
+}
+/* room-top-controls fully clickable */
+.room-top-controls {
+  pointer-events: auto !important;
+  z-index: 50 !important;
+}
+.room-top-controls button {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* ── Final room-top-fp fix ── */
+.room-top-fp {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--linen,#f5f0e8) !important;
+  padding: 24px !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  border-left: 1px solid rgba(196,160,96,.15) !important;
+  gap: 10px !important;
+}
+.room-top-fp img {
+  max-width: 100% !important;
+  max-height: 340px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+.room-top-fp-cap {
+  display: block !important;
+  font: 400 9px/1 var(--sans,'Jost',sans-serif) !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: var(--cedar,#a8926a) !important;
+  text-align: center !important;
+  opacity: 1 !important;
+}
+
+/* ── room-top grid final ── */
+.room-top {
+  display: grid !important;
+  grid-template-columns: 1.1fr 0.9fr !important;
+  height: 480px !important;
+  position: relative !important;
+}
+.room-top-slider {
+  position: relative !important;
+  overflow: hidden !important;
+  background: #111 !important;
+  height: 100% !important;
+}
+.room-top-slider .slide {
+  display: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.room-top-slider .slide.active {
+  display: block !important;
+}
+.room-top-slider .slide img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
 </style>
 </head>
 <body>
@@ -5627,7 +5735,7 @@ h2.section-title {
 
 <!-- ══ NEIGHBOURHOOD TEASER ══ -->
 <section class="nb-teaser">
-  <div class="nb-teaser-head reveal">
+  <div class="nb-teaser-head">
     <div class="nb-teaser-eye">Neighbourhood · 周辺案内</div>
     <h2 class="nb-teaser-h2">Old Tokyo,<br><em>still alive</em></h2>
     <p class="nb-teaser-sub">Five minutes from your door — century-old craftsmen, morning temple walks, lantern-lit izakayas, and Tokyo's entire network within reach.</p>

@@ -5584,6 +5584,55 @@ h2.section-title {
   display: block !important;
 }
 
+
+/* ══ ROOM BOTTOM — Beautiful redesign ══ */
+.room-bottom {
+  padding: 36px 48px !important;
+  gap: 48px !important;
+  grid-template-columns: 1.2fr 1.4fr auto !important;
+  align-items: center !important;
+  border-top: 2px solid rgba(196,160,96,.18) !important;
+}
+.room-bottom-left h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem) !important;
+  font-weight: 300 !important;
+  letter-spacing: -.01em !important;
+  line-height: 1.1 !important;
+  color: var(--ebony, #1a1008) !important;
+  margin-bottom: 8px !important;
+}
+.room-bottom-left .room-badge {
+  font-size: 10px !important;
+  letter-spacing: .18em !important;
+  margin-bottom: 12px !important;
+}
+.room-bottom-left .room-desc {
+  font-size: 14.5px !important;
+  line-height: 1.8 !important;
+  color: var(--slate, #4a3f30) !important;
+  max-width: 380px !important;
+}
+.room-bottom-mid .room-specs {
+  gap: 20px 48px !important;
+}
+.room-bottom .spec-lbl {
+  font-size: 9.5px !important;
+  letter-spacing: .2em !important;
+  color: var(--cedar, #a8926a) !important;
+  margin-bottom: 5px !important;
+}
+.room-bottom .spec-val {
+  font-size: 18px !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 400 !important;
+  color: var(--ebony, #1a1008) !important;
+  line-height: 1.2 !important;
+}
+.room-bottom-right {
+  min-width: 180px !important;
+  gap: 14px !important;
+}
+
 /* ══ FORCE all reveals visible ══ */
 .reveal { opacity: 1 !important; transform: none !important; }
 .features-section .reveal,

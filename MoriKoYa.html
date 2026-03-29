@@ -5716,26 +5716,42 @@ h2.section-title {
 .room-amenities-bar {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 16px 32px !important;
+  gap: 18px 40px !important;
   background: var(--navy, #1a1008) !important;
-  padding: 18px 48px !important;
+  padding: 24px 48px !important;
   border-top: 1px solid rgba(196,160,96,.12) !important;
 }
 .am-item {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
-  font-size: 10.5px !important;
-  letter-spacing: .16em !important;
+  gap: 10px !important;
+  font-size: 16px !important;
+  letter-spacing: .14em !important;
   text-transform: uppercase !important;
-  color: rgba(237,224,204,.65) !important;
+  color: rgba(237,224,204,.72) !important;
   font-weight: 400 !important;
 }
 .am-item::before {
   content: '—' !important;
   color: var(--cedar, #a8926a) !important;
-  font-size: 9px !important;
+  font-size: 12px !important;
 }
+
+/* ══ SUITE AMENITIES cards +30% ══ */
+.feat-title {
+  font-size: 34px !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 400 !important;
+  margin-bottom: 16px !important;
+  line-height: 1.15 !important;
+}
+.feat-desc {
+  font-size: 20px !important;
+  line-height: 1.85 !important;
+  color: rgba(237,224,204,.78) !important;
+  font-weight: 300 !important;
+}
+.feat-icon { display: none !important; }
 
 /* ══ FORCE all reveals visible ══ */
 .reveal { opacity: 1 !important; transform: none !important; }

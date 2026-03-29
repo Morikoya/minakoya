@@ -5480,7 +5480,7 @@ h2.section-title {
 .nb-teaser-head,
 .nb-teaser-head .reveal,
 .features-section .reveal,
-.exp-section .reveal:first-child,
+.exp-section .reveal,
 .rooms-section .reveal:first-child {
   opacity: 1 !important;
   transform: none !important;
@@ -5583,6 +5583,12 @@ h2.section-title {
   object-fit: cover !important;
   display: block !important;
 }
+
+/* ══ FORCE all reveals visible ══ */
+.reveal { opacity: 1 !important; transform: none !important; }
+.features-section .reveal,
+.exp-section .reveal,
+.rooms-section .reveal { opacity: 1 !important; transform: none !important; }
 </style>
 </head>
 <body>
@@ -9875,7 +9881,7 @@ function showRoom(id, btn) {
 }
 
 /* ── Image slider ── */
-const sliders = { a:{idx:0,total:4}, b:{idx:0,total:4}, c:{idx:0,total:5} }, b:{idx:0,total:4}, c:{idx:0,total:5} }, b:{idx:0,total:4}, c:{idx:0,total:5} };
+const sliders = { a:{idx:0,total:4}, b:{idx:0,total:4}, c:{idx:0,total:5} };
 
 function updateSlider(key) {
   const s  = sliders[key];

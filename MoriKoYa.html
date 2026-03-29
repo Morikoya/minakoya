@@ -10333,7 +10333,7 @@ function showPage(pageId, scrollTo) {
       if (t) t.scrollIntoView({ behavior: 'smooth' });
     }, 80);
   }
-  history.pushState(null, '', '#' + targetPage);
+  try { history.pushState(null, '', '#' + targetPage); } catch(e) {}
   // ALWAYS ensure first section is visible when switching pages
   if (el) {
     var secs = el.querySelectorAll('.section');

@@ -5716,42 +5716,237 @@ h2.section-title {
 .room-amenities-bar {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 18px 40px !important;
+  gap: 16px 32px !important;
   background: var(--navy, #1a1008) !important;
-  padding: 24px 48px !important;
+  padding: 18px 48px !important;
+  border-top: 1px solid rgba(196,160,96,.12) !important;
+}
+.am-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 10.5px !important;
+  letter-spacing: .16em !important;
+  text-transform: uppercase !important;
+  color: rgba(237,224,204,.65) !important;
+  font-weight: 400 !important;
+}
+.am-item::before {
+  content: '—' !important;
+  color: var(--cedar, #a8926a) !important;
+  font-size: 9px !important;
+}
+
+
+/* ══════════════════════════════════════
+   OPTIMAL ROOM LAYOUT — Clean & Spacious
+   Left: photos (no distortion)
+   Right top: floor plan
+   Right bottom: specs + price + reserve
+══════════════════════════════════════ */
+
+/* Override room-split to use CSS Grid */
+.room-split {
+  display: grid !important;
+  grid-template-columns: 1.75fr 1fr !important;
+  grid-template-rows: auto auto !important;
+  height: auto !important;
+  min-height: unset !important;
+  position: static !important;
+}
+
+/* Photo slider: spans full left column, both rows */
+.room-top {
+  display: contents !important;
+}
+.room-top-slider {
+  grid-column: 1 !important;
+  grid-row: 1 / 3 !important;
+  height: 660px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: #111 !important;
+  z-index: 1 !important;
+}
+.room-top-slider .slide {
+  position: absolute !important;
+  inset: 0 !important;
+  display: none !important;
+}
+.room-top-slider .slide.active { display: block !important; }
+.room-top-slider .slide img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  filter: saturate(.9) !important;
+}
+
+/* Floor plan: right column, top row */
+.room-top-fp {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #f5f0e8 !important;
+  padding: 24px 20px 16px !important;
+  height: 360px !important;
+  box-sizing: border-box !important;
+  border-left: 1px solid rgba(196,160,96,.18) !important;
+  border-bottom: 1px solid rgba(196,160,96,.12) !important;
+}
+.room-top-fp img {
+  max-width: 100% !important;
+  max-height: 300px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+.room-top-fp-cap {
+  display: block !important;
+  font-size: 8.5px !important;
+  letter-spacing: .14em !important;
+  text-transform: uppercase !important;
+  color: var(--cedar, #a8926a) !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+  opacity: .65 !important;
+  font-family: var(--sans, 'Jost', sans-serif) !important;
+}
+
+/* Info panel: right column, bottom row — specs + price + reserve */
+.room-bottom {
+  grid-column: 2 !important;
+  grid-row: 2 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 28px 28px 24px !important;
+  height: 300px !important;
+  box-sizing: border-box !important;
+  background: var(--white, #faf7f2) !important;
+  border-left: 1px solid rgba(196,160,96,.18) !important;
+  border-top: none !important;
+  gap: 0 !important;
+  grid-template-columns: unset !important;
+}
+
+/* Hide left text block (name/desc) */
+.room-bottom-left h2,
+.room-bottom-left .room-desc { display: none !important; }
+.room-bottom-left {
+  margin-bottom: 4px !important;
+}
+.room-bottom-left .room-badge {
+  display: inline-block !important;
+  font-size: 9px !important;
+  letter-spacing: .18em !important;
+  margin-bottom: 0 !important;
+}
+
+/* Specs grid: 2 columns, generous spacing */
+.room-bottom-mid {
+  flex: 1 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  padding-top: 14px !important;
+}
+.room-bottom-mid .room-specs {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 14px 20px !important;
+  width: 100% !important;
+}
+.room-bottom .spec-lbl {
+  font-size: 9.5px !important;
+  letter-spacing: .18em !important;
+  text-transform: uppercase !important;
+  color: var(--cedar, #a8926a) !important;
+  margin-bottom: 3px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+.room-bottom .spec-val {
+  font-size: 17px !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 400 !important;
+  color: var(--ebony, #1a1008) !important;
+  line-height: 1.1 !important;
+}
+
+/* Price + reserve: horizontal row at bottom */
+.room-bottom-right {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-top: 18px !important;
+  border-top: 1px solid rgba(196,160,96,.12) !important;
+  min-width: unset !important;
+  gap: 12px !important;
+}
+.price-block { text-align: left !important; }
+.price-from {
+  font-size: 10px !important;
+  letter-spacing: .18em !important;
+  text-transform: uppercase !important;
+  color: var(--cedar, #a8926a) !important;
+  font-weight: 400 !important;
+  margin-bottom: 2px !important;
+}
+.price-num {
+  font-size: 2.6rem !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+  color: var(--ebony, #1a1008) !important;
+  letter-spacing: -.02em !important;
+}
+.price-per {
+  font-size: 9.5px !important;
+  color: rgba(74,63,48,.55) !important;
+  letter-spacing: .04em !important;
+  line-height: 1.4 !important;
+  margin-top: 2px !important;
+}
+.room-btns { width: auto !important; }
+.btn-reserve {
+  white-space: nowrap !important;
+  padding: 14px 22px !important;
+  font-size: 11px !important;
+  letter-spacing: .16em !important;
+}
+
+/* Amenities bar: spans full width below everything */
+.room-amenities-bar {
+  grid-column: 1 / 3 !important;
+  grid-row: unset !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 18px 36px !important;
+  background: var(--navy, #1a1008) !important;
+  padding: 22px 48px !important;
   border-top: 1px solid rgba(196,160,96,.12) !important;
 }
 .am-item {
   display: inline-flex !important;
   align-items: center !important;
   gap: 10px !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   letter-spacing: .14em !important;
   text-transform: uppercase !important;
-  color: rgba(237,224,204,.72) !important;
+  color: rgba(237,224,204,.7) !important;
   font-weight: 400 !important;
 }
 .am-item::before {
   content: '—' !important;
   color: var(--cedar, #a8926a) !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
 }
-
-/* ══ SUITE AMENITIES cards +30% ══ */
-.feat-title {
-  font-size: 34px !important;
-  font-family: 'Cormorant Garamond', Georgia, serif !important;
-  font-weight: 400 !important;
-  margin-bottom: 16px !important;
-  line-height: 1.15 !important;
-}
-.feat-desc {
-  font-size: 20px !important;
-  line-height: 1.85 !important;
-  color: rgba(237,224,204,.78) !important;
-  font-weight: 300 !important;
-}
-.feat-icon { display: none !important; }
 
 /* ══ FORCE all reveals visible ══ */
 .reveal { opacity: 1 !important; transform: none !important; }

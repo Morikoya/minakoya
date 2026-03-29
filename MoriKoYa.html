@@ -5364,8 +5364,7 @@ h2.section-title {
 .room-split-right,
 .room-split-fp,
 .room-slider-wrap,
-.fp-section,
-.room-amenities-bar {
+.fp-section {
   display: none !important;
 }
 
@@ -5631,6 +5630,111 @@ h2.section-title {
 .room-bottom-right {
   min-width: 180px !important;
   gap: 14px !important;
+}
+
+
+/* ══ AMENITIES BAR: floating am-items fix ══ */
+.room-panel .room-split + .am-item,
+.room-split ~ .am-item {
+  display: inline-flex !important;
+}
+
+/* Make am-items that are direct children of room-panel show as a bar */
+.room-panel > .am-item {
+  display: none !important;
+}
+
+/* ══ NEW UNIFIED ROOM BOTTOM LAYOUT ══ */
+/* Move specs inline with name/desc - all in one visual block */
+.room-bottom {
+  background: var(--white, #faf7f2) !important;
+  padding: 32px 48px !important;
+  display: grid !important;
+  grid-template-columns: 1.4fr 1.2fr auto !important;
+  gap: 40px !important;
+  align-items: center !important;
+  border-top: 2px solid rgba(196,160,96,.15) !important;
+}
+.room-bottom-left h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem) !important;
+  font-weight: 300 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.02em !important;
+  color: var(--ebony, #1a1008) !important;
+  margin: 6px 0 10px !important;
+}
+.room-bottom-left .room-badge {
+  font-size: 9.5px !important;
+  letter-spacing: .2em !important;
+  margin-bottom: 4px !important;
+}
+.room-bottom-left .room-desc {
+  font-size: 14px !important;
+  line-height: 1.85 !important;
+  color: rgba(74,63,48,.8) !important;
+  max-width: 400px !important;
+  margin-top: 6px !important;
+}
+.room-bottom-mid .room-specs {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 20px 24px !important;
+}
+.room-bottom .spec-lbl {
+  font-size: 9px !important;
+  letter-spacing: .22em !important;
+  text-transform: uppercase !important;
+  color: var(--cedar, #a8926a) !important;
+  margin-bottom: 4px !important;
+  font-weight: 500 !important;
+}
+.room-bottom .spec-val {
+  font-size: 17px !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 400 !important;
+  color: var(--ebony, #1a1008) !important;
+  line-height: 1.1 !important;
+}
+.room-bottom-right {
+  min-width: 170px !important;
+  gap: 12px !important;
+  align-items: flex-end !important;
+}
+.price-num {
+  font-size: 2.8rem !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 300 !important;
+}
+.price-from {
+  font-size: 9px !important;
+  letter-spacing: .18em !important;
+  text-transform: uppercase !important;
+  color: var(--cedar, #a8926a) !important;
+}
+
+/* ══ AMENITIES BAR shown below room-bottom ══ */
+.room-amenities-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 16px 32px !important;
+  background: var(--navy, #1a1008) !important;
+  padding: 18px 48px !important;
+  border-top: 1px solid rgba(196,160,96,.12) !important;
+}
+.am-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 10.5px !important;
+  letter-spacing: .16em !important;
+  text-transform: uppercase !important;
+  color: rgba(237,224,204,.65) !important;
+  font-weight: 400 !important;
+}
+.am-item::before {
+  content: '—' !important;
+  color: var(--cedar, #a8926a) !important;
+  font-size: 9px !important;
 }
 
 /* ══ FORCE all reveals visible ══ */
@@ -5941,7 +6045,7 @@ h2.section-title {
         </div>
       </div>
 
-    </div><!-- /room-split --><div class="am-item">Deep Soaking Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Private Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div>
+    </div><!-- /room-split --><div class="room-amenities-bar"><div class="am-item">Deep Soaking Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Private Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div></div>
   </div><!-- /ra -->
 
   <!-- TYPE B -->
@@ -5994,7 +6098,7 @@ h2.section-title {
         </div>
       </div>
 
-    </div><!-- /room-split --><div class="am-item">Deep Soaking Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Private Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div>
+    </div><!-- /room-split --><div class="room-amenities-bar"><div class="am-item">Deep Soaking Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Private Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div></div>
   </div><!-- /rb -->
 
   <!-- TYPE C -->
@@ -6048,7 +6152,7 @@ h2.section-title {
         </div>
       </div>
 
-    </div><!-- /room-split --><div class="am-item">Premium Hinoki Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Wide Panoramic Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div>
+    </div><!-- /room-split --><div class="room-amenities-bar"><div class="am-item">Premium Hinoki Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Wide Panoramic Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div></div>
   </div><!-- /rc -->
 
 

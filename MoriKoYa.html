@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MoriKoYa 森小屋 — Luxury Boutique Suites · Asakusa, Tokyo</title>
+<title>MoriKoYa — ⑤ 茶 Cha Brown</title>
 
 <!-- SEO -->
-<meta name="description" content="14 private luxury suites in the heart of Asakusa — 5 min walk from Senso-ji Temple. Private balcony, courtyard, full kitchen, washer/dryer. From USD $500/night.">
-<meta name="keywords" content="Asakusa hotel, Tokyo luxury suites, private balcony, apartment hotel Tokyo, family hotel Asakusa, MoriKoYa">
+<meta name="description" content="12 private luxury suites in the heart of Asakusa — 5 min walk from Senso-ji Temple. Private hinoki onsen bath, kaiseki breakfast, full kitchen. From USD $500/night.">
+<meta name="keywords" content="Asakusa hotel, Tokyo luxury suites, hinoki onsen, apartment hotel Tokyo, family hotel Asakusa, MoriKoYa">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.morikoya.jp/">
 
@@ -15,7 +15,7 @@
 <meta property="og:type"        content="website">
 <meta property="og:url"         content="https://www.morikoya.jp/">
 <meta property="og:title"       content="MoriKoYa 森小屋 — Luxury Suites · Asakusa, Tokyo">
-<meta property="og:description" content="14 private suites in the heart of Asakusa. Private balcony, full kitchen, in-suite washer/dryer. 5 min from Senso-ji Temple.">
+<meta property="og:description" content="14 private suites in the heart of Asakusa. Private hinoki onsen, kaiseki breakfast, full kitchen. 5 min from Senso-ji Temple.">
 <meta property="og:image"       content="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&q=85&auto=format&fit=crop">
 <meta property="og:locale"      content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
@@ -24,7 +24,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="MoriKoYa 森小屋 — Asakusa, Tokyo">
-<meta name="twitter:description" content="14 private suites · Private balcony · Full kitchen · 5 min from Senso-ji">
+<meta name="twitter:description" content="14 private suites · Private hinoki onsen · Kaiseki breakfast · 5 min from Senso-ji">
 <meta name="twitter:image"       content="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&q=85&auto=format&fit=crop">
 
 <!-- Schema.org: Hotel -->
@@ -66,7 +66,7 @@
     {"@type": "LocationFeatureSpecification", "name": "Full Kitchen", "value": true},
     {"@type": "LocationFeatureSpecification", "name": "In-Room Washer/Dryer", "value": true},
     {"@type": "LocationFeatureSpecification", "name": "Separate Bedrooms with Real Walls", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Japanese Breakfast Experience (neighbourhood guide)", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Kaiseki Breakfast Available", "value": true},
     {"@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true}
   ],
   "priceRange": "¥120,000–¥180,000",
@@ -82,14 +82,14 @@
     {
       "@type": "Accommodation",
       "name": "Type A — Two-Bedroom Suite",
-      "description": "2 separate bedrooms with real walls, private balcony, deep soaking bath, full kitchen. Sleeps up to 5.",
+      "description": "2 separate bedrooms with real walls, private balcony, hinoki bath, full kitchen. Sleeps up to 5.",
       "floorSize": {"@type": "QuantitativeValue", "value": 40, "unitCode": "MTK"},
       "occupancy": {"@type": "QuantitativeValue", "maxValue": 5}
     },
     {
       "@type": "Accommodation",
       "name": "Type C — Three-Bedroom Penthouse Suite",
-      "description": "Entire 9th floor. 3 bedrooms, panoramic balcony, premium deep soaking bath. Sleeps up to 8.",
+      "description": "Entire 9th floor. 3 bedrooms, panoramic balcony, premium hinoki bath. Sleeps up to 8.",
       "floorSize": {"@type": "QuantitativeValue", "value": 63, "unitCode": "MTK"},
       "occupancy": {"@type": "QuantitativeValue", "maxValue": 8}
     }
@@ -175,7 +175,6 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--ink);
 }
 .hero-bg {
   position: absolute; inset: 0; overflow: hidden;
-  pointer-events: none;
 }
 
 .hero-bg-slide {
@@ -192,17 +191,11 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--ink);
 }
 .hero-bg-slide::after {
   content: ''; position: absolute; inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(to right,
-      rgba(10,8,5,.82) 0%,
-      rgba(10,8,5,.55) 45%,
-      rgba(10,8,5,.18) 75%,
-      rgba(10,8,5,.05) 100%),
-    linear-gradient(to top,
-      rgba(10,8,5,.92) 0%,
-      rgba(10,8,5,.35) 35%,
-      rgba(10,8,5,.0)  65%);
+  background: linear-gradient(165deg,
+    rgba(30,22,12,.55) 0%,
+    rgba(30,22,12,.25) 45%,
+    rgba(30,22,12,.78) 80%,
+    rgba(30,22,12,.95) 100%);
 }
 
 @keyframes zoomOut {
@@ -211,7 +204,7 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--ink);
 }
 .hero-inner {
   position: relative; z-index: 2;
-  display: grid; grid-template-columns: 1fr 380px;
+  display: grid; grid-template-columns: 1fr 360px;
   gap: 3rem; align-items: end;
   max-width: 1200px; width: 100%;
   padding: 0 52px 72px; margin: 0 auto;
@@ -326,10 +319,10 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--ink);
   animation: marquee 22s linear infinite;
 }
 .strip-track span {
-  font-size: 13px; letter-spacing: .22em; text-transform: uppercase;
-  color: var(--cedar); padding: 1.1rem 2rem; flex-shrink: 0; font-weight: 400;
+  font-size: 9.5px; letter-spacing: .32em; text-transform: uppercase;
+  color: var(--cedar); padding: .85rem 2rem; flex-shrink: 0; font-weight: 400;
 }
-.strip-dot { color: rgba(196,160,96,.3); padding: 1.1rem .2rem; font-size: 1rem; flex-shrink: 0; }
+.strip-dot { color: rgba(196,160,96,.3); padding: .85rem .2rem; font-size: .6rem; flex-shrink: 0; }
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
@@ -353,7 +346,7 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--ink);
 .section-title-light { color: var(--ivory); }
 .section-title-light em { color: var(--cedar); }
 .section-body {
-  font-size: 16.5px; line-height: 1.9; color: var(--mid);
+  font-size: 17px; line-height: 1.9; color: #3A3028;
   font-weight: 300;
 }
 .reveal { opacity: 0; transform: translateY(18px);
@@ -396,12 +389,12 @@ body { font-family: var(--sans); background: var(--ivory); color: var(--ink);
   position: sticky; top: 58px; z-index: 150;
 }
 .room-tab {
-  font: 500 13px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
-  color: rgba(237,224,204,.55); padding: 18px 22px; cursor: pointer;
+  font: 400 11px/1 var(--sans); letter-spacing: .13em; text-transform: uppercase;
+  color: rgba(237,224,204,.38); padding: 18px 22px; cursor: pointer;
   border: none; background: none; border-bottom: 2px solid transparent;
   transition: all .2s; white-space: nowrap;
 }
-.room-tab:hover { color: rgba(237,224,204,.90); }
+.room-tab:hover { color: rgba(237,224,204,.75); }
 .room-tab.active { color: var(--ivory); border-bottom-color: var(--persim); }
 
 .room-panel { display: none; }
@@ -911,8 +904,8 @@ footer {
   50% { opacity:.4; transform:scale(1.4); }
 }
 #page-neighbourhood .life-banner-text {
-  font-size: 16px;
-  color: rgba(237,224,204,.78);
+  font-size: 13.5px;
+  color: rgba(237,224,204,.65);
 }
 #page-neighbourhood .life-banner-text strong { color: var(--cedar); font-weight: 500; }
 #page-neighbourhood .life-badge-sm {
@@ -941,8 +934,8 @@ footer {
 }
 #page-neighbourhood .tab-nav::-webkit-scrollbar { display: none; }
 #page-neighbourhood .tab-btn {
-  font: 400 13.5px/1 'Jost', sans-serif;
-  letter-spacing: .11em;
+  font: 400 11px/1 'Jost', sans-serif;
+  letter-spacing: .13em;
   text-transform: uppercase;
   color: rgba(237,224,204,.4);
   padding: 17px 18px;
@@ -968,9 +961,11 @@ footer {
 #page-neighbourhood .grp-btn.active { background: var(--navy); color: var(--ivory); border-color: var(--navy); }
 #page-neighbourhood .grp-panel { display: none; }
 #page-neighbourhood .grp-panel.active { display: block; }
-#page-neighbourhood .section { display: none; }
+#page-neighbourhood 
+.section { display: none; }
 #page-neighbourhood .section.active { display: block; }
-#page-neighbourhood .sec-header { padding: 68px 52px 38px; }
+#page-neighbourhood 
+.sec-header { padding: 68px 52px 38px; }
 #page-neighbourhood .sec-eye {
   font-size: 10px;
   letter-spacing: .22em;
@@ -1349,8 +1344,8 @@ footer {
 }
 #page-access .tab-nav::-webkit-scrollbar { display: none; }
 #page-access .tab-btn {
-  font: 400 13.5px/1 'Jost', sans-serif;
-  letter-spacing: .11em;
+  font: 400 11px/1 'Jost', sans-serif;
+  letter-spacing: .13em;
   text-transform: uppercase;
   color: rgba(237,224,204,.4);
   padding: 17px 18px;
@@ -1363,9 +1358,11 @@ footer {
 }
 #page-access .tab-btn:hover { color: rgba(237,224,204,.78); }
 #page-access .tab-btn.active { color: var(--ivory); border-bottom-color: var(--persim); }
-#page-access .section { display: none; }
+#page-access 
+.section { display: none; }
 #page-access .section.active { display: block; }
-#page-access .sec-header { padding: 72px 56px 44px; }
+#page-access 
+.sec-header { padding: 72px 56px 44px; }
 #page-access .sec-eye {
   font-size: 13px;
   letter-spacing: .2em;
@@ -2262,9 +2259,9 @@ footer {
 }
 .story-title em { font-style: italic; color: var(--cedar); }
 #page-about .story-body {
-  font-size: 16.5px;
+  font-size: 14.5px;
   color: var(--mid);
-  line-height: 1.88;
+  line-height: 1.82;
   font-weight: 300;
 }
 
@@ -3318,47 +3315,45 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 
 .room-sub {
   font-size: 15px !important;
-  color: var(--cedar) !important;
+  color: #5C4A1A !important;
   opacity: 1 !important;
-  margin-bottom: 22px !important;
+  margin-bottom: 20px !important;
   letter-spacing: .02em !important;
 }
 
 .room-desc {
   font-size: 16px !important;
-  line-height: 1.88 !important;
-  color: var(--mid) !important;
+  line-height: 1.9 !important;
+  color: #3A3028 !important;
   opacity: 1 !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 28px !important;
 }
 
 /* Spec cards — bigger labels and values */
 .spec {
-  padding: 18px 16px !important;
-  gap: 14px !important;
+  padding: 13px 14px !important;
 }
 .spec-lbl {
-  font-size: 13px !important;
-  letter-spacing: .09em !important;
-  color: var(--mid) !important;
-  opacity: 1 !important;
+  font-size: 10px !important;
+  letter-spacing: .12em !important;
+  color: var(--ink) !important;
+  opacity: 0.45 !important;
+  margin-bottom: 4px !important;
   font-weight: 500 !important;
-  margin-bottom: 5px !important;
 }
 .spec-val {
-  font-size: 17px !important;
+  font-size: 14.5px !important;
   font-weight: 600 !important;
   color: var(--ink) !important;
 }
 
 /* Price block */
 .price-from {
-  font-size: 13px !important;
-  letter-spacing: .1em !important;
-  color: var(--mid) !important;
-  opacity: 1 !important;
-  font-weight: 500 !important;
-  margin-bottom: 6px !important;
+  font-size: 11px !important;
+  letter-spacing: .12em !important;
+  color: var(--ink) !important;
+  opacity: 0.5 !important;
+  margin-bottom: 5px !important;
 }
 .price-num {
   font-size: 3.2rem !important;
@@ -3368,10 +3363,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   color: var(--persim) !important;
 }
 .price-per {
-  font-size: 14px !important;
-  color: var(--mid) !important;
-  opacity: 1 !important;
-  margin-top: 5px !important;
+  font-size: 12px !important;
+  color: var(--ink) !important;
+  opacity: 0.5 !important;
+  margin-top: 4px !important;
 }
 
 /* Reserve / Detail buttons — more prominent */
@@ -3408,17 +3403,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .fp-section {
   padding: 56px 52px !important;
 }
-.fp-layout {
-  grid-template-columns: 1fr 280px !important;
-  gap: 32px !important;
-}
-.fp-img-wrap {
-  padding: 12px !important;
-}
-.fp-img-wrap img {
-  max-width: 100% !important;
-  width: 100% !important;
-}
 .fp-title {
   font-size: 28px !important;
   font-weight: 400 !important;
@@ -3426,10 +3410,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   margin-bottom: 8px !important;
 }
 .fp-sub {
-  font-size: 14px !important;
-  color: var(--mid) !important;
-  opacity: 1 !important;
-  letter-spacing: .03em !important;
+  font-size: 13.5px !important;
+  color: var(--ink) !important;
+  opacity: 0.55 !important;
+  letter-spacing: .04em !important;
 }
 .fp-badge {
   font-size: 11px !important;
@@ -3443,30 +3427,30 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   color: var(--navy) !important;
 }
 .fp-room-item {
-  padding: 16px 16px !important;
+  padding: 12px 14px !important;
   margin-bottom: 0 !important;
 }
 .fp-room-name {
-  font-size: 17px !important;
+  font-size: 14px !important;
   font-weight: 600 !important;
   color: var(--ink) !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 2px !important;
 }
 .fp-room-note {
-  font-size: 14px !important;
-  color: var(--mid) !important;
-  opacity: 1 !important;
-  line-height: 1.55 !important;
+  font-size: 12px !important;
+  color: var(--ink) !important;
+  opacity: 0.55 !important;
+  line-height: 1.5 !important;
 }
 .fp-room-icon {
   font-size: 16px !important;
 }
 .fp-disclaimer {
-  font-size: 13.5px !important;
-  color: var(--mid) !important;
-  opacity: 1 !important;
-  line-height: 1.7 !important;
-  padding: 16px 18px !important;
+  font-size: 12px !important;
+  color: var(--ink) !important;
+  opacity: 0.48 !important;
+  line-height: 1.65 !important;
+  padding: 14px 16px !important;
 }
 
 /* Room info panel padding */
@@ -3501,10 +3485,10 @@ body {
 
 /* Section eyebrows — more visible */
 .eyebrow {
-  font-size: 12px !important;
-  letter-spacing: .22em !important;
+  font-size: 10.5px !important;
+  letter-spacing: .28em !important;
   font-weight: 500 !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 14px !important;
 }
 
 /* Section title — clearer hierarchy */
@@ -3526,10 +3510,9 @@ h2.section-title {
   margin-bottom: 10px !important;
 }
 .feat-desc {
-  font-size: 15.5px !important;
-  line-height: 1.85 !important;
-  opacity: 1 !important;
-  color: rgba(237,224,204,.78) !important;
+  font-size: 13.5px !important;
+  line-height: 1.8 !important;
+  opacity: 0.6 !important;
 }
 
 /* Reviews */
@@ -3840,180 +3823,49 @@ h2.section-title {
 }
 
 
-/* (merged) */
-.fp-layout { grid-template-columns: 1fr 260px !important; gap: 28px !important; }
-.fp-img-wrap { padding: 8px !important; }
-.fp-img-wrap img { width: 100% !important; max-width: 100% !important; height: auto !important; }
-.fp-section { padding: 52px !important; }
-.fp-header { margin-bottom: 28px !important; }
-
-/* ── SPEC CARDS: nuclear clarity fix ── */
-.spec { padding: 20px 18px !important; gap: 16px !important; background: var(--white) !important; }
-.spec-icon { font-size: 22px !important; }
-.spec-lbl { 
-  font-size: 13px !important; 
-  letter-spacing: .08em !important; 
-  color: var(--mid) !important; 
-  opacity: 1 !important; 
-  font-weight: 500 !important; 
-  text-transform: uppercase !important;
-  margin-bottom: 6px !important; 
-}
-.spec-val { 
-  font-size: 18px !important; 
-  font-weight: 600 !important; 
-  color: var(--ink) !important; 
-  letter-spacing: -.01em !important;
-}
-.room-specs { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
-
-
-/* ── HERO TAGS (homepage) ── */
-.hero-tags { display: flex; gap: 10px; flex-wrap: wrap; }
-.hero-tag {
+/* ════════════════════════════════════════
+   CONTRAST FIXES & EYEBROW OVERRIDE
+════════════════════════════════════════ */
+.eyebrow {
+  color: #4A5C45 !important;
   font-size: 12px !important;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  padding: 8px 18px;
-  border: 1px solid rgba(194,160,96,.45);
-  color: var(--cedar);
-  border-radius: 20px;
-  font-family: var(--sans);
-  font-weight: 400;
 }
+.eyebrow-cedar { color: var(--cedar) !important; }
 
-/* ── STRIP ENLARGED ── */
-.strip-track span { font-size: 13px !important; letter-spacing: .2em !important; padding: 1.1rem 2rem !important; }
-.strip-dot { font-size: 1rem !important; padding: 1.1rem .4rem !important; }
-
-/* ── FLOOR PLAN: kill all white space ── */
-.fp-img-wrap { padding: 4px !important; border: none !important; background: transparent !important; }
-.fp-img-wrap img { width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; }
-.fp-layout { grid-template-columns: 1.4fr 280px !important; gap: 24px !important; align-items: start !important; }
-.fp-section { padding: 40px 40px !important; }
-
-
-/* ── TAB BUTTONS ENLARGED ── */
-#page-neighbourhood .tab-btn { font-size: 13.5px !important; letter-spacing: .1em !important; padding: 18px 20px !important; }
-#page-access .tab-btn { font-size: 13.5px !important; letter-spacing: .1em !important; padding: 18px 20px !important; }
-#page-about .tab-btn { font-size: 13.5px !important; letter-spacing: .1em !important; padding: 18px 20px !important; }
-.tab-btn { font-size: 13.5px !important; }
-.room-tab { font-size: 13px !important; letter-spacing: .1em !important; }
-
-/* ── LIFE BANNER ── */
-#page-neighbourhood .life-banner-text { font-size: 16px !important; color: rgba(237,230,216,.80) !important; }
-
-/* ── ABOUT STORY BODY ── */
-#page-about .story-body { font-size: 16.5px !important; line-height: 1.88 !important; }
-#page-about .story-card { padding: 44px 40px !important; }
-
-
-/* Suite Finder CSS removed */
-
-/* ══════════════════════════════════════════
-   NUCLEAR TYPOGRAPHY OVERRIDE — FINAL LAYER
-   (covers all small-font issues in v6.1/cha)
-══════════════════════════════════════════ */
-
-/* Spec labels / room specs */
-.spec-lbl { font-size: 13px !important; letter-spacing: .12em !important; }
-.spec-val { font-size: 17px !important; font-weight: 500 !important; }
-.spec-item { padding: 14px 0 !important; }
-
-/* Floor plan legend */
-.fp-room-name { font-size: 16px !important; font-weight: 600 !important; color: var(--navy) !important; }
-.fp-room-note { font-size: 13.5px !important; }
-.fp-legend-title { font-size: 13px !important; letter-spacing: .15em !important; }
-
-/* Strip ticker */
-.strip-track span { font-size: 13px !important; letter-spacing: .2em !important; padding: 1.1rem 2rem !important; }
-.strip-dot { font-size: 1rem !important; padding: 1.1rem .4rem !important; }
-
-/* Feature descriptions */
-.feat-desc { font-size: 15px !important; line-height: 1.72 !important; }
-.feat-title { font-size: 17px !important; }
-
-/* About story body */
-#page-about .story-body { font-size: 16.5px !important; line-height: 1.88 !important; }
-#page-about .story-card { padding: 44px 40px !important; }
-#page-about .story-title { font-size: 22px !important; }
-
-/* Tab buttons ALL pages */
-.tab-btn { font-size: 13.5px !important; letter-spacing: .1em !important; }
-#page-neighbourhood .tab-btn,
-#page-access .tab-btn,
-#page-about .tab-btn { padding: 18px 20px !important; }
-
-/* Life banner */
-#page-neighbourhood .life-banner-text { font-size: 16px !important; }
-
-/* Hero eyebrow */
-.hero-eyebrow { font-size: 12px !important; letter-spacing: .2em !important; }
-
-/* Review cards */
-.rev-text { font-size: 15.5px !important; line-height: 1.75 !important; }
-.rev-author { font-size: 13px !important; }
-
-/* Section body text */
-.section-body { font-size: 16px !important; line-height: 1.78 !important; }
-.sec-body { font-size: 16px !important; line-height: 1.78 !important; }
-
-/* Hero sub */
-.hero-sub { font-size: 16px !important; line-height: 1.85 !important; }
-
-/* Hero tags styling */
-.hero-tag {
-  font-size: 12px !important;
-  letter-spacing: .08em !important;
-  padding: 9px 18px !important;
-  border: 1px solid rgba(194,160,96,.45) !important;
-  border-radius: 20px !important;
-  color: var(--cedar) !important;
-  background: rgba(194,160,96,.08) !important;
-  font-family: var(--sans) !important;
-  display: inline-block !important;
+/* ════════════════════════════════════════
+   FLOOR PLAN SLIDE STYLES
+════════════════════════════════════════ */
+.slide-fp .fp-slide-inner {
+  width: 100%; height: 100%; min-height: 520px;
+  background: #F8F5EE;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 40px 24px 24px; position: relative;
 }
-
-/* Reserve button */
-.btn-fill { font-size: 13px !important; letter-spacing: .22em !important; padding: 16px 36px !important; }
-.btn-outline { font-size: 13px !important; letter-spacing: .22em !important; padding: 16px 36px !important; }
-
-
-/* ── Hero overlay elements: pointer-events NONE to allow nav/tab clicks ── */
-.hero-bg, .hero-bg *, .hero-bg-slide, .hero-bg-slide::before, .hero-bg-slide::after {
-  pointer-events: none !important;
+.slide-fp .fp-slide-inner img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: contain;
+  display: block;
 }
-
-
-/* ── Hero Pager — prevent overflow, horizontal display ── */
-#heroPager {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  gap: 0 !important;
-  position: absolute !important;
-  bottom: 2.8rem !important;
-  left: 52px !important;
-  right: auto !important;
-  z-index: 10 !important;
-  overflow: hidden !important;
-  max-width: calc(100vw - 104px) !important;
+.fp-slide-badge {
+  position: absolute; top: 16px; left: 16px;
+  background: #C4A060; color: #fff;
+  font: 500 9px/1 'Jost', sans-serif;
+  letter-spacing: .2em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 2px; z-index: 10;
 }
-#heroPager .hp-btn {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  flex-shrink: 1 !important;
-  min-width: 0 !important;
-}
-#heroPager .hp-label {
-  display: flex !important;
-  flex-direction: column !important;
-  white-space: nowrap !important;
-}
+.fp-slide-svg { width: 100%; max-height: 420px; }
+.room-slider.fp-active { background: #F5EEDC !important; }
 
+/* Square dot for floor plan */
+.sl-dot.fp-dot {
+  width: 8px; height: 8px; border-radius: 1px;
+  background: rgba(196,160,96,.35);
+}
+.sl-dot.fp-dot.active { background: var(--cedar); }
 
+/* === INJECTED FROM MORIKOYA === */
 /* ══ SECTION VISIBILITY — FORCE CORRECT ══ */
 #page-neighbourhood .section { display: none !important; }
 #page-neighbourhood .section.active { display: block !important; }
@@ -5953,6 +5805,7 @@ h2.section-title {
 .features-section .reveal,
 .exp-section .reveal,
 .rooms-section .reveal { opacity: 1 !important; transform: none !important; }
+
 </style>
 </head>
 <body>
@@ -6257,222 +6110,7 @@ h2.section-title {
       </div>
 
     </div><!-- /room-split --><div class="room-amenities-bar"><div class="am-item">Deep Soaking Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Private Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div></div>
-  </div><!-- /ra -->
-
-  <!-- TYPE B -->
-  <div class="room-panel" id="rb">
-    <div class="room-split">
-      <div class="room-top">
-
-        <!-- Left: photo slider -->
-        <div class="room-top-slider" id="slider-b">
-          <div class="slide active"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&q=82&auto=format&fit=crop" alt="Living Room"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=900&q=82&auto=format&fit=crop" alt="Bedroom"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=82&auto=format&fit=crop" alt="Kitchen"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=82&auto=format&fit=crop" alt="Bathroom"></div>
-          <div class="slide-counter" id="sc-b">1 / 4</div>
-          <div class="slider-label">Type B · 2-Bedroom Suite</div>
-          <div class="room-top-controls">
-            <button class="sl-btn" onclick="slide('b',-1)" aria-label="Prev">&#8249;</button>
-            <div class="sl-dots" id="dots-b"><div class="sl-dot active" onclick="goSlide('b',0)"></div><div class="sl-dot" onclick="goSlide('b',1)"></div><div class="sl-dot" onclick="goSlide('b',2)"></div><div class="sl-dot" onclick="goSlide('b',3)"></div></div>
-            <button class="sl-btn" onclick="slide('b',1)" aria-label="Next">&#8250;</button>
-          </div>
-        </div>
-
-        <!-- Right: large floor plan -->
-        <div class="room-top-fp">
-          <img src="https://cdn.jsdelivr.net/gh/FrankG-asakusa/image@main/typeB.png" alt="Type B Floor Plan" loading="lazy">
-          <div class="room-top-fp-cap">Type B · 2寝室スイートB型 · For reference only</div>
-        </div>
-
-      </div><!-- /room-top -->
-
-      <!-- Bottom: info bar -->
-      <div class="room-bottom">
-        <div class="room-bottom-left">
-          <div class="room-badge sage">Type B · 2BR · Mid-Floor · Up to 5 Guests</div>
-          <h2>Two-Bedroom<br>Suite B</h2>
-          <p class="room-desc">Suite B offers the same generous two-bedroom layout with a refined, slightly elevated floor position and updated interior palette. Ideal for couples with children or a small family group.</p>
-        </div>
-        <div class="room-bottom-mid">
-          <div class="room-specs"><div class="spec"><div><div class="spec-lbl">Bedrooms</div><div class="spec-val">2 Bedrooms</div></div></div><div class="spec"><div><div class="spec-lbl">Capacity</div><div class="spec-val">Up to 5 Guests</div></div></div><div class="spec"><div><div class="spec-lbl">Size</div><div class="spec-val">39–42㎡</div></div></div><div class="spec"><div><div class="spec-lbl">View</div><div class="spec-val">Street Balcony</div></div></div><div class="spec"><div><div class="spec-lbl">Bath</div><div class="spec-val">Deep Soaking Bath</div></div></div><div class="spec"><div><div class="spec-lbl">Floor</div><div class="spec-val">3rd – 7th</div></div></div></div>
-        </div>
-        <div class="room-bottom-right">
-          <div class="price-block">
-            <div class="price-from">From</div>
-            <div class="price-num">$560</div>
-            <div class="price-per">per night · direct booking rate</div>
-          </div>
-          <div class="room-btns">
-            <button class="btn-reserve" onclick="document.getElementById('hw') && document.getElementById('hw').scrollIntoView({behavior:'smooth'})">Reserve Suite B</button>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /room-split --><div class="room-amenities-bar"><div class="am-item">Deep Soaking Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Private Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div></div>
-  </div><!-- /rb -->
-
-  <!-- TYPE C -->
-  <div class="room-panel" id="rc">
-    <div class="room-split">
-      <div class="room-top">
-
-        <!-- Left: photo slider -->
-        <div class="room-top-slider" id="slider-c">
-          <div class="slide active"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=82&auto=format&fit=crop" alt="Living Room"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900&q=82&auto=format&fit=crop" alt="Bedroom 1"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=82&auto=format&fit=crop" alt="Bedroom 2"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=82&auto=format&fit=crop" alt="Kitchen"></div>
-          <div class="slide"><img loading="lazy" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=82&auto=format&fit=crop" alt="Bathroom"></div>
-          <div class="slide-counter" id="sc-c">1 / 5</div>
-          <div class="slider-label">Type C · 3-Bedroom Suite</div>
-          <div class="room-top-controls">
-            <button class="sl-btn" onclick="slide('c',-1)" aria-label="Prev">&#8249;</button>
-            <div class="sl-dots" id="dots-c"><div class="sl-dot active" onclick="goSlide('c',0)"></div><div class="sl-dot" onclick="goSlide('c',1)"></div><div class="sl-dot" onclick="goSlide('c',2)"></div><div class="sl-dot" onclick="goSlide('c',3)"></div><div class="sl-dot" onclick="goSlide('c',4)"></div></div>
-            <button class="sl-btn" onclick="slide('c',1)" aria-label="Next">&#8250;</button>
-          </div>
-        </div>
-
-        <!-- Right: large floor plan -->
-        <div class="room-top-fp">
-          <img src="https://cdn.jsdelivr.net/gh/FrankG-asakusa/image@main/typeC.png" alt="Type C Floor Plan" loading="lazy">
-          <div class="room-top-fp-cap">Type C · 3寝室スイートC型 · 9F · For reference only</div>
-        </div>
-
-      </div><!-- /room-top -->
-
-      <!-- Bottom: info bar -->
-      <div class="room-bottom">
-        <div class="room-bottom-left">
-          <div class="room-badge cedar">Type C · 3BR · Flagship · Up to 8 Guests</div>
-          <h2>Three-Bedroom<br>Suite C</h2>
-          <p class="room-desc">Our largest and most exclusive suite occupies the entire 9th floor. Three full bedrooms, a generous living-dining area with panoramic Asakusa views, a premium hinoki onsen bath, and the widest balcony in the building.</p>
-        </div>
-        <div class="room-bottom-mid">
-          <div class="room-specs"><div class="spec"><div><div class="spec-lbl">Bedrooms</div><div class="spec-val">3 Bedrooms</div></div></div><div class="spec"><div><div class="spec-lbl">Capacity</div><div class="spec-val">Up to 8 Guests</div></div></div><div class="spec"><div><div class="spec-lbl">Size</div><div class="spec-val">63㎡ · Entire Floor</div></div></div><div class="spec"><div><div class="spec-lbl">Floor</div><div class="spec-val">9th · Panoramic</div></div></div><div class="spec"><div><div class="spec-lbl">Bath</div><div class="spec-val">Premium Hinoki</div></div></div><div class="spec"><div><div class="spec-lbl">Balcony</div><div class="spec-val">Wide Panoramic</div></div></div></div>
-        </div>
-        <div class="room-bottom-right">
-          <div class="price-block">
-            <div class="price-from">From</div>
-            <div class="price-num">$900</div>
-            <div class="price-per">per night · direct booking rate for all guests</div>
-          </div>
-          <div class="room-btns">
-            <button class="btn-reserve" onclick="document.getElementById('hw') && document.getElementById('hw').scrollIntoView({behavior:'smooth'})">Reserve Suite C</button>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /room-split --><div class="room-amenities-bar"><div class="am-item">Premium Hinoki Bath</div><div class="am-item">In-Room Washer/Dryer</div><div class="am-item">Wide Panoramic Balcony</div><div class="am-item">Smart TV</div><div class="am-item">High-Speed Wi-Fi</div><div class="am-item">Full Amenity Set</div><div class="am-item">Neighbourhood Breakfast Guide</div></div></div>
-  </div><!-- /rc -->
-
-
-
-
-</section>
-
-<section class="features-section">
-  <div class="features-inner">
-    <div class="features-top reveal">
-      <div>
-        <div class="eyebrow eyebrow-cedar">Suite Amenities</div>
-        <h2 class="section-title section-title-light">Every detail,<br><em>already here</em></h2>
-      </div>
-      <p style="font-size:13.5px;color:rgba(237,224,204,.38);max-width:320px;text-align:right;line-height:1.8;font-weight:300">
-        From the first morning coffee to the late-night soak — every comfort is included in your nightly rate.
-      </p>
-    </div>
-    <div class="features-grid">
-      <div class="feat reveal"><span class="feat-icon">◈</span><div class="feat-title">In-Suite Soaking Bath</div><div class="feat-desc">Deep soaking bath in every suite. Select from seasonal bath salts — complimentary, curated quarterly.</div></div>
-      <div class="feat reveal d1"><span class="feat-icon">◈</span><div class="feat-title">Full Apartment Kitchen</div><div class="feat-desc">IH stove, full fridge, microwave, kettle, Nespresso, and complete cookware &amp; tableware for the whole group.</div></div>
-      <div class="feat reveal d2"><span class="feat-icon">◈</span><div class="feat-title">Curated Breakfast Guide</div><div class="feat-desc">We\'re 2 minutes from Nishi-Asakusa\'s local market street — fresh tofu-ya, century-old wagashi, sashimi at dawn. We prepare a curated neighbourhood breakfast guide for every guest.</div></div>
-      <div class="feat reveal"><span class="feat-icon">◈</span><div class="feat-title">In-Room Washer/Dryer</div><div class="feat-desc">Full-size all-in-one unit. No coin laundry. Ideal for families staying a week or longer.</div></div>
-      <div class="feat reveal d1"><span class="feat-icon">◈</span><div class="feat-title">Private Balcony</div><div class="feat-desc">Street-facing balcony in every suite. Asakusa morning views with your coffee — no crowds, no noise.</div></div>
-      <div class="feat reveal d2"><span class="feat-icon">◈</span><div class="feat-title">Real Walls &amp; Doors</div><div class="feat-desc">Original apartment construction — separate bedrooms with solid walls and locking doors. True privacy for families.</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="exp-section">
-  <div class="exp-inner">
-    <div class="exp-header reveal">
-      <div>
-        <div class="eyebrow">Cultural Add-Ons</div>
-        <h2 class="section-title">Curated <em>immersions</em><br>in living culture</h2>
-      </div>
-      <p class="section-body">
-        Led by 職人 artisan practitioners — intimate, authentic, and exclusive to MoriKoYa guests.
-        Book any experience directly with your reservation.
-      </p>
-    </div>
-    <div class="exp-grid">
-      <div class="exp-card reveal" data-n="01">
-        <div class="exp-num">01 · Ceremony</div>
-        <div class="exp-title">Tea Ceremony</div>
-        <div class="exp-title-jp">茶道体験</div>
-        <div class="exp-desc">Private omakase session with a fourth-generation chajin. Seasonal wagashi confections included.</div>
-      </div>
-      <div class="exp-card reveal d1" data-n="02">
-        <div class="exp-num">02 · Dawn</div>
-        <div class="exp-title">Temple Dawn Walk</div>
-        <div class="exp-title-jp">浅草早朝散策</div>
-        <div class="exp-desc">Pre-sunrise walk through Senso-ji with a local historian. Before the first tourist arrives.</div>
-      </div>
-      <div class="exp-card reveal d2" data-n="03">
-        <div class="exp-num">03 · Dress</div>
-        <div class="exp-title">Yukata Dressing</div>
-        <div class="exp-title-jp">浴衣着付け</div>
-        <div class="exp-desc">Kitsuke session by our in-house specialist. Then stroll Nakamise in full traditional dress.</div>
-      </div>
-      <div class="exp-card reveal d3" data-n="04">
-        <div class="exp-num">04 · Discovery</div>
-        <div class="exp-title">Private City Guide</div>
-        <div class="exp-title-jp">プライベートガイド</div>
-        <div class="exp-desc">Bespoke half or full-day tours from Tsukiji to hidden Shitamachi craft workshops.</div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="reviews-section">
-  <div class="reviews-inner">
-    <div class="reveal">
-      <div class="eyebrow">Guest Voices</div>
-      <h2 class="section-title">What our <em>guests</em> say</h2>
-    </div>
-    <div class="rev-grid">
-      <div class="rev-card reveal d1">
-        <div class="rev-stars">★★★★★</div>
-        <p class="rev-text">"Outstanding in every way. The perfect blend of sophistication and warmth. Our children had their own bedroom with a real door — we all slept beautifully."</p>
-        <div class="rev-who">James &amp; Sarah Anderson</div>
-        <div class="rev-loc">New York, USA · Type C Suite</div>
-      </div>
-      <div class="rev-card reveal d2">
-        <div class="rev-stars">★★★★★</div>
-        <p class="rev-text">"Exceeded all expectations. Waking to kaiseki breakfast and walking to Senso-ji before 7am while it was still quiet — a five-star experience from start to finish."</p>
-        <div class="rev-who">Sophie Martin</div>
-        <div class="rev-loc">Paris, France · Type A Suite</div>
-      </div>
-      <div class="rev-card reveal d3">
-        <div class="rev-stars">★★★★★</div>
-        <p class="rev-text">"Simply magnificent. The deep soaking bath every night, the full kitchen for our family's breakfast — we felt at home in the most beautiful part of Tokyo. We will return."</p>
-        <div class="rev-who">David Kim</div>
-        <div class="rev-loc">Seoul, South Korea · Type B Suite</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section">
-  <h2>Begin your stay</h2>
-  <p>12 suites. Quiet by design.<br>Book directly for the best rate — neighbourhood breakfast guide included for every guest.</p>
-  <button class="btn-white" onclick="document.getElementById('hw').scrollIntoView({behavior:'smooth'})">Check Availability</button>
-  <a class="btn-woutline" href="access.html">Getting Here →</a>
-</section>
-
-
-</div><!-- /page-home -->
+  </div><!-- /page-home -->
 
 <div class="page" id="page-neighbourhood">
 <section class="hero">
@@ -6480,24 +6118,15 @@ h2.section-title {
   <h1>Old Tokyo,<br><em>still breathing</em></h1>
   <p class="hero-desc">Step outside MoriKoYa and into one of Tokyo's most alive neighbourhoods. Century-old shops, lantern-lit festivals, Life supermarket one minute away for fresh sashimi at dawn — and Sensoji Temple casting a quiet shadow at the end of every street.</p>
   <div class="hero-tags">
-    <span class="hero-tag">Morning</span>
-    <span class="hero-tag">Lunch</span>
-    <span class="hero-tag">Dinner</span>
-    <span class="hero-tag">Culture</span>
-    <span class="hero-tag">Festivals</span>
-    <span class="hero-tag">Century Shops</span>
-    <span class="hero-tag">Life Supermarket</span>
+    <span class="hero-tag">☀ Morning</span>
+    <span class="hero-tag">🍜 Lunch</span>
+    <span class="hero-tag">🍶 Dinner</span>
+    <span class="hero-tag">⛩ Culture</span>
+    <span class="hero-tag">🎏 Festivals</span>
+    <span class="hero-tag">🏮 Century Shops</span>
+    <span class="hero-tag">🛒 Life Supermarket</span>
   </div>
 </section>
-
-<!-- Back bar -->
-<div class="nb-back-bar" id="nbBackBar" onclick="showPage('home')">
-  <div class="nb-back-arrow">&#8592;</div>
-  <div class="nb-back-text">
-    <strong>Back to Home</strong>
-    <span>Return to MoriKoYa</span>
-  </div>
-</div>
 
 <div class="life-banner">
   <div class="live-dot"></div>
@@ -6506,21 +6135,21 @@ h2.section-title {
 </div>
 
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="sw('morning',this)">Morning</button>
-  <button class="tab-btn" onclick="sw('lunch',this)">Lunch</button>
-  <button class="tab-btn" onclick="sw('dinner',this)">Dinner &amp; Drinks</button>
-  <button class="tab-btn" onclick="sw('culture',this)">Culture &amp; Sights</button>
-  <button class="tab-btn" onclick="sw('festivals',this)">Festivals</button>
-  <button class="tab-btn" onclick="sw('century',this)">Century Shops</button>
-  <button class="tab-btn" onclick="sw('supermarket',this)">Life Supermarket</button>
-  <button class="tab-btn" onclick="sw('group',this)">Group Experiences</button>
-  <button class="tab-btn" onclick="sw('foodtrip',this)">Food Trip Routes</button>
-  <button class="tab-btn" onclick="sw('daytrips',this)">Day Trips</button>
-  <button class="tab-btn" onclick="sw('booking',this)">Booking Support</button>
+  <button class="tab-btn active" onclick="sw('morning',this)">☀ Morning</button>
+  <button class="tab-btn" onclick="sw('lunch',this)">🍜 Lunch</button>
+  <button class="tab-btn" onclick="sw('dinner',this)">🍶 Dinner &amp; Drinks</button>
+  <button class="tab-btn" onclick="sw('culture',this)">⛩ Culture &amp; Sights</button>
+  <button class="tab-btn" onclick="sw('festivals',this)">🎏 Festivals</button>
+  <button class="tab-btn" onclick="sw('century',this)">🏮 Century Shops</button>
+  <button class="tab-btn" onclick="sw('supermarket',this)">🛒 Life Supermarket</button>
+  <button class="tab-btn" onclick="sw('group',this)">🎎 Group Experiences</button>
+  <button class="tab-btn" onclick="sw('foodtrip',this)">🗺 Food Trip Routes</button>
+  <button class="tab-btn" onclick="sw('daytrips',this)">🚃 Day Trips</button>
+  <button class="tab-btn" onclick="sw('booking',this)">✉ Booking Support</button>
 </div>
 
 <!-- ═══════ MORNING ═══════ -->
-<section class="section active" id="tab-morning" style="display:block">
+<section class="section active" id="tab-morning">
   <div class="sec-header">
     <div class="sec-eye">Morning Guide · 朝の過ごし方</div>
     <h2>The <em>real Tokyo</em> morning</h2>
@@ -6637,7 +6266,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">1 min walk</span><span class="ptag">Bento</span><span class="ptag">Sashimi</span><span class="ptag">Tofu</span></div>
         <p class="place-desc">The deli counter at Life rivals specialist restaurants — fresh sashimi platters, house-made bento still warm from the kitchen, grilled fish, simmered tofu. Buy lunch and eat on your balcony. ¥400–900 for a complete, beautiful meal. The quality is extraordinary for a supermarket.</p>
         <div class="place-meta">
-          <span class="place-walk">1 min</span>
+          <span class="place-walk">🚶 1 min</span>
           <span class="place-price">¥400–900</span>
           <span class="place-hours">09:00–24:00 daily</span>
         </div>
@@ -6656,7 +6285,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Since 1868</span><span class="ptag">Tendon</span><span class="ptag">Queue early</span></div>
         <p class="place-desc">One of Asakusa's most iconic restaurants. The tendon — deep, dark sesame sauce, perfectly crisped jumbo shrimp — has been made the same way since Meiji era. Queue forms before opening; the wait is part of the experience. Do not skip this place.</p>
         <div class="place-meta">
-          <span class="place-walk">7 min</span>
+          <span class="place-walk">🚶 7 min</span>
           <span class="place-price">¥1,500–2,500</span>
           <span class="place-hours">11:00–20:30</span>
         </div>
@@ -6675,7 +6304,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Since 1942</span><span class="ptag">Toast</span><span class="ptag">Sandwiches</span></div>
         <p class="place-desc">Thick-cut shokupan toasted over charcoal — the same bread, the same method since 1942. The ham katsu sando uses a locally-sourced ham, breaded in Pelican crumbs, covered in a thick sweet sauce. Arrive by 8:00 for a table. A legendary Asakusa institution.</p>
         <div class="place-meta">
-          <span class="place-walk">7 min</span>
+          <span class="place-walk">🚶 7 min</span>
           <span class="place-price">¥600–1,200</span>
           <span class="place-hours">9:00–17:30 Mon–Sat</span>
         </div>
@@ -6694,7 +6323,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag sg">Handmade</span><span class="ptag">Soba</span><span class="ptag">Local favourite</span></div>
         <p class="place-desc">Hand-cut soba noodles made fresh each morning. The cold zaru soba in summer and hot kake soba in winter are both exceptional. Eight seats, complete quiet, and an understanding of why Tokyo earns Michelin stars for noodles.</p>
         <div class="place-meta">
-          <span class="place-walk">5 min</span>
+          <span class="place-walk">🚶 5 min</span>
           <span class="place-price">¥900–1,400</span>
           <span class="place-hours">11:30–15:00</span>
         </div>
@@ -6713,7 +6342,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Since 1895</span><span class="ptag">Wagyu</span><span class="ptag">Sukiyaki</span></div>
         <p class="place-desc">The lunch set is an accessible entry to the full Imahan experience — premium wagyu beef, house-made sweet soy broth, Kyoto tofu. Reserve in advance; we make the Japanese-language call for you at no charge.</p>
         <div class="place-meta">
-          <span class="place-walk">6 min</span>
+          <span class="place-walk">🚶 6 min</span>
           <span class="place-price">¥3,000–6,000</span>
           <span class="place-hours">11:30–21:00</span>
         </div>
@@ -6732,7 +6361,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag">Ningyo-yaki</span><span class="ptag">Melonpan</span><span class="ptag">Senbei</span></div>
         <p class="place-desc">The 250-metre approach to Sensoji is lined with snack shops barely changed in 80 years. Ningyo-yaki (doll-shaped cakes with red bean), freshly baked senbei, hot matcha soft serve. Best before 10:00 — before the tourist crowds arrive.</p>
         <div class="place-meta">
-          <span class="place-walk">5 min</span>
+          <span class="place-walk">🚶 5 min</span>
           <span class="place-price">¥200–600</span>
           <span class="place-hours">10:00–18:00</span>
         </div>
@@ -6762,7 +6391,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Since 1880</span><span class="ptag">Oden</span><span class="ptag">Sake</span></div>
         <p class="place-desc">One of Tokyo's most famous oden restaurants — a small room heated by a giant clay pot, simmering dashi broth with daikon, tofu, fishcake. Sit at the counter and let the evening unfold. The sake is carefully chosen. Reserve weeks ahead — we'll do it for you.</p>
         <div class="place-meta">
-          <span class="place-walk">8 min</span>
+          <span class="place-walk">🚶 8 min</span>
           <span class="place-price">¥2,000–4,000</span>
           <span class="place-hours">16:00–21:30 Tue–Sun</span>
         </div>
@@ -6781,7 +6410,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag">Tsukiji-grade</span><span class="ptag">Sushi</span><span class="ptag">Walk-in</span></div>
         <p class="place-desc">Market-fresh sushi at prices impossible anywhere else in Tokyo. The maguro is cut with ceremony; the ikura practically bursts. Come at opening or join the queue — it moves quickly, and the experience is worth every minute of the wait.</p>
         <div class="place-meta">
-          <span class="place-walk">8 min</span>
+          <span class="place-walk">🚶 8 min</span>
           <span class="place-price">¥1,500–3,000</span>
           <span class="place-hours">11:00–21:00</span>
         </div>
@@ -6800,7 +6429,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag">Izakaya row</span><span class="ptag">Yakitori</span><span class="ptag">Hoppy beer</span></div>
         <p class="place-desc">A narrow lantern-lit street of open-fronted izakayas where locals have been drinking Hoppy and eating grilled skewers since the 1950s. Plastic seats, shared benches, the most honest food in Tokyo. No English menu needed — just point and nod.</p>
         <div class="place-meta">
-          <span class="place-walk">4 min</span>
+          <span class="place-walk">🚶 4 min</span>
           <span class="place-price">¥800–1,500</span>
           <span class="place-hours">11:00–22:00</span>
         </div>
@@ -6819,7 +6448,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Since 1895</span><span class="ptag">Wagyu</span><span class="ptag">Shabu-shabu</span></div>
         <p class="place-desc">Among Asakusa's finest dinner experiences — premium wagyu cooked tableside in sweet soy sauce with raw egg dipping. One of the most requested reservation assists from MoriKoYa guests. Reserve 3 days ahead. We call for you.</p>
         <div class="place-meta">
-          <span class="place-walk">6 min</span>
+          <span class="place-walk">🚶 6 min</span>
           <span class="place-price">¥8,000–15,000</span>
           <span class="place-hours">11:30–22:00</span>
         </div>
@@ -6838,7 +6467,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Since 1801</span><span class="ptag">Loach fish</span><span class="ptag">Edo cuisine</span></div>
         <p class="place-desc">Over 220 years of continuous operation. Specialises in dojo (loach fish), a dish of deep Edo heritage almost no restaurant still serves. The interior is unchanged since the Meiji era — tatami, low tables, open kitchen. A genuine time capsule.</p>
         <div class="place-meta">
-          <span class="place-walk">9 min</span>
+          <span class="place-walk">🚶 9 min</span>
           <span class="place-price">¥2,000–4,000</span>
           <span class="place-hours">11:00–21:00</span>
         </div>
@@ -6857,7 +6486,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag sg">Regional sake</span><span class="ptag">Whisky</span><span class="ptag">No reservation</span></div>
         <p class="place-desc">A beloved local sake bar introducing visitors to Japan's finest regional sake for decades. The owner speaks some English and will guide you by preference. Small dishes are excellent. No reservation needed — arrive after 18:00 for the full atmosphere.</p>
         <div class="place-meta">
-          <span class="place-walk">6 min</span>
+          <span class="place-walk">🚶 6 min</span>
           <span class="place-price">¥1,500–3,000</span>
           <span class="place-hours">17:00–23:00</span>
         </div>
@@ -6895,7 +6524,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">Founded 628 CE</span><span class="ptag">Free</span><span class="ptag">Open 24hrs</span></div>
         <p class="place-desc">Tokyo's oldest temple and most spiritually alive place. Come at 06:00 before the crowds: incense smoke rises undisturbed, elderly worshippers arrive for daily prayer. The Kaminarimon lantern is lit until 23:00. Visit twice — dawn and dusk are entirely different worlds.</p>
         <div class="place-meta">
-          <span class="place-walk">5 min</span>
+          <span class="place-walk">🚶 5 min</span>
           <span class="place-price">Free</span>
           <span class="place-hours">Grounds open 24hrs</span>
         </div>
@@ -6914,7 +6543,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag">634 metres</span><span class="ptag">Observation deck</span><span class="ptag">Dining</span></div>
         <p class="place-desc">Visible from MoriKoYa's upper floors on clear days. The Tembo Deck at 350m offers unobstructed 360° views of Tokyo. At night the tower changes colour in sequences of traditional Japanese patterns. Book online to skip the queue.</p>
         <div class="place-meta">
-          <span class="place-walk">15 min</span>
+          <span class="place-walk">🚶 15 min</span>
           <span class="place-price">¥2,100–3,100</span>
           <span class="place-hours">10:00–21:00</span>
         </div>
@@ -6933,7 +6562,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag">River boat</span><span class="ptag">12 historic bridges</span><span class="ptag">Hamarikyu</span></div>
         <p class="place-desc">Board the Tokyo Water Bus at Azumabashi pier — 10 minutes' walk. Travel by river through central Tokyo past 12 bridges from different eras. The 35-minute route to Hamarikyu Gardens offers views no street or train can match. Deeply underused by visitors.</p>
         <div class="place-meta">
-          <span class="place-walk">10 min</span>
+          <span class="place-walk">🚶 10 min</span>
           <span class="place-price">¥800–1,060</span>
           <span class="place-hours">From 09:35 daily</span>
         </div>
@@ -6952,7 +6581,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag hl">From hotel</span><span class="ptag">Kimono rental</span><span class="ptag">Rickshaw tour</span></div>
         <p class="place-desc">Rent a yukata and walk through Asakusa the way it has been experienced for 200 years. Or hire a jinrikisha (rickshaw) for a narrated 30-minute circuit — the young operators speak English and know every story. We arrange everything before you arrive.</p>
         <div class="place-meta">
-          <span class="place-walk">3 min</span>
+          <span class="place-walk">🚶 3 min</span>
           <span class="place-price">¥1,500–3,000</span>
           <span class="place-hours">10:00–18:00</span>
         </div>
@@ -6971,7 +6600,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag sg">Rakugo</span><span class="ptag">Manzai</span><span class="ptag">Traditional arts</span></div>
         <p class="place-desc">A 300-seat traditional variety theatre — rakugo, manzai, kōdan performed every day since 1964. No Japanese required to appreciate the physical comedy and audience rapport. Buy tickets at the door. An evening no guidebook can capture.</p>
         <div class="place-meta">
-          <span class="place-walk">6 min</span>
+          <span class="place-walk">🚶 6 min</span>
           <span class="place-price">¥3,000</span>
           <span class="place-hours">12:00–20:40 daily</span>
         </div>
@@ -6990,7 +6619,7 @@ h2.section-title {
         <div class="place-tags"><span class="ptag">Boro folk textiles</span><span class="ptag">English guided</span><span class="ptag">Rooftop view</span></div>
         <p class="place-desc">Dedicated to boro — repeatedly mended fabric over generations, creating textiles that are simultaneously records of poverty and extraordinary beauty. The rooftop offers a rarely-seen view of Sensoji's five-storey pagoda.</p>
         <div class="place-meta">
-          <span class="place-walk">8 min</span>
+          <span class="place-walk">🚶 8 min</span>
           <span class="place-price">¥1,500</span>
           <span class="place-hours">10:00–18:00 Tue–Sun</span>
         </div>
@@ -7023,7 +6652,7 @@ h2.section-title {
 
     <div class="fest-card">
       <div class="fest-img">
-        <div class="fest-placeholder" style="background:linear-gradient(160deg,#A87830,#8B3A20);"></div>
+        <div class="fest-placeholder" style="background:linear-gradient(160deg,#A87830,#8B3A20);">🏮</div>
       </div>
       <div class="fest-body">
         <div class="fest-month">May</div>
@@ -7048,7 +6677,7 @@ h2.section-title {
 
     <div class="fest-card">
       <div class="fest-img">
-        <div class="fest-placeholder" style="background:linear-gradient(160deg,#2A1E10,#23293A);"></div>
+        <div class="fest-placeholder" style="background:linear-gradient(160deg,#2A1E10,#23293A);">🪷</div>
       </div>
       <div class="fest-body">
         <div class="fest-month">Aug</div>
@@ -7060,7 +6689,7 @@ h2.section-title {
 
     <div class="fest-card">
       <div class="fest-img">
-        <div class="fest-placeholder" style="background:linear-gradient(160deg,#8C7060,#6A5040);"></div>
+        <div class="fest-placeholder" style="background:linear-gradient(160deg,#8C7060,#6A5040);">🍁</div>
       </div>
       <div class="fest-body">
         <div class="fest-month">Oct–Nov</div>
@@ -7072,7 +6701,7 @@ h2.section-title {
 
     <div class="fest-card">
       <div class="fest-img">
-        <div class="fest-placeholder" style="background:linear-gradient(160deg,#1E160C,#1A1F2E);"></div>
+        <div class="fest-placeholder" style="background:linear-gradient(160deg,#1E160C,#1A1F2E);">🎍</div>
       </div>
       <div class="fest-body">
         <div class="fest-month">Dec–Jan</div>
@@ -7084,7 +6713,7 @@ h2.section-title {
 
     <div class="fest-card">
       <div class="fest-img">
-        <div class="fest-placeholder" style="background:linear-gradient(160deg,#6B7A62,#4A5245);"></div>
+        <div class="fest-placeholder" style="background:linear-gradient(160deg,#6B7A62,#4A5245);">🫘</div>
       </div>
       <div class="fest-body">
         <div class="fest-month">Feb 3</div>
@@ -7096,7 +6725,7 @@ h2.section-title {
 
     <div class="fest-card">
       <div class="fest-img">
-        <div class="fest-placeholder" style="background:linear-gradient(160deg,#C4A060,#9A7E5A);"></div>
+        <div class="fest-placeholder" style="background:linear-gradient(160deg,#C4A060,#9A7E5A);">🛍</div>
       </div>
       <div class="fest-body">
         <div class="fest-month">Monthly</div>
@@ -7126,7 +6755,7 @@ h2.section-title {
         <div class="cent-name">Yonehachi</div>
         <div class="cent-jp">米八 · Senbei since Genroku era</div>
         <p class="cent-desc">Handmade senbei baked over charcoal using techniques from 1688. Each cracker individually turned by hand. The shop smells of woodsmoke and sesame. Buy a packet — they last three weeks and taste nothing like supermarket senbei.</p>
-        <div class="cent-walk">7 min from MoriKoYa</div>
+        <div class="cent-walk">🚶 7 min from MoriKoYa</div>
       </div>
     </div>
 
@@ -7139,7 +6768,7 @@ h2.section-title {
         <div class="cent-name">Komagata Dojo</div>
         <div class="cent-jp">駒形どぜう · 220+ years continuous</div>
         <p class="cent-desc">Over 220 years of unbroken operation. Serving dojo (loach fish) in the Edo style — the interior is unchanged since the Meiji restoration. Sitting cross-legged at a low table eating a dish made exactly this way for two centuries is genuinely rare.</p>
-        <div class="cent-walk">9 min from MoriKoYa</div>
+        <div class="cent-walk">🚶 9 min from MoriKoYa</div>
       </div>
     </div>
 
@@ -7152,7 +6781,7 @@ h2.section-title {
         <div class="cent-name">Nakaya</div>
         <div class="cent-jp">中屋 · 刃物・職人道具</div>
         <p class="cent-desc">Supplying Asakusa's professional kitchens and artisan workshops since 1842. Japanese kitchen knives, woodworking tools — all professional grade, at prices far below specialty retailers. The staff will sharpen your knife while you wait.</p>
-        <div class="cent-walk">8 min from MoriKoYa</div>
+        <div class="cent-walk">🚶 8 min from MoriKoYa</div>
       </div>
     </div>
 
@@ -7165,7 +6794,7 @@ h2.section-title {
         <div class="cent-name">Otafuku</div>
         <div class="cent-jp">おたふく · おでん料理</div>
         <p class="cent-desc">The oden restaurant warming Asakusa since 1880. The dashi broth is made from a mother-stock tracing back to the restaurant's founding. Reserve far in advance — locals who live 5 minutes away wait months for a weekend table. We call for you.</p>
-        <div class="cent-walk">8 min from MoriKoYa</div>
+        <div class="cent-walk">🚶 8 min from MoriKoYa</div>
       </div>
     </div>
 
@@ -7178,7 +6807,7 @@ h2.section-title {
         <div class="cent-name">Fujiya</div>
         <div class="cent-jp">藤屋 · 手ぬぐい · Tenugui textiles</div>
         <p class="cent-desc">Hand-dyed tenugui — traditional cotton towels based on Edo-period woodblock print motifs. The dyeing is done in-house with techniques unchanged since 1867. One of Asakusa's best and most portable souvenirs.</p>
-        <div class="cent-walk">5 min from MoriKoYa</div>
+        <div class="cent-walk">🚶 5 min from MoriKoYa</div>
       </div>
     </div>
 
@@ -7191,7 +6820,7 @@ h2.section-title {
         <div class="cent-name">Nishikiya</div>
         <div class="cent-jp">錦屋 · 400+ years of wagashi</div>
         <p class="cent-desc">One of Tokyo's oldest businesses, making Edo-style wagashi since the early Edo period. The anko filling is made fresh each morning from a recipe that has never changed. Small wooden shop, three staff, no credit cards — exactly as it should be.</p>
-        <div class="cent-walk">6 min from MoriKoYa</div>
+        <div class="cent-walk">🚶 6 min from MoriKoYa</div>
       </div>
     </div>
   </div>
@@ -7211,14 +6840,14 @@ h2.section-title {
       <div class="life-l-title">Japan's daily life, one minute from your door</div>
       <p class="life-l-desc">Life carries the quality standards of a specialist food hall at everyday prices. The Nishi-Asakusa branch serves the local residential community — this is where MoriKoYa's neighbours shop every morning, and where you'll find the sashimi for a ¥600 balcony lunch that outclasses restaurants at ten times the price.</p>
       <div class="life-items">
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Fresh Sashimi</div><div class="life-item-desc">From 10:00 daily. Tuna, salmon, sea bream, octopus. Sea urchin in season</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Bento &amp; Deli</div><div class="life-item-desc">Hot bento from 11:00. Grilled fish, tempura, braised pork, vegetable sides</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Fresh Tofu</div><div class="life-item-desc">House-made silken and firm tofu delivered each morning. Serve cold with soy</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Sake &amp; Shochu</div><div class="life-item-desc">Regional sake with tasting notes. Local craft beer and premium shochu</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Premium Fruit</div><div class="life-item-desc">Amaou strawberries, Shine Muscat grapes, Shingen peaches — seasonal</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Dashi &amp; Miso</div><div class="life-item-desc">Premium dashi stocks, artisan miso, soy sauce. Take Japan's flavour home</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Tamagoyaki</div><div class="life-item-desc">Freshly rolled egg omelette — buy warm and eat on your balcony</div></div>
-        <div class="life-item"><div class="life-item-icon"></div><div class="life-item-name">Matcha &amp; Tea</div><div class="life-item-desc">Ceremonial and drinking grade matcha, sencha, hojicha to take home</div></div>
+        <div class="life-item"><div class="life-item-icon">🐟</div><div class="life-item-name">Fresh Sashimi</div><div class="life-item-desc">From 10:00 daily. Tuna, salmon, sea bream, octopus. Sea urchin in season</div></div>
+        <div class="life-item"><div class="life-item-icon">🍱</div><div class="life-item-name">Bento &amp; Deli</div><div class="life-item-desc">Hot bento from 11:00. Grilled fish, tempura, braised pork, vegetable sides</div></div>
+        <div class="life-item"><div class="life-item-icon">🥛</div><div class="life-item-name">Fresh Tofu</div><div class="life-item-desc">House-made silken and firm tofu delivered each morning. Serve cold with soy</div></div>
+        <div class="life-item"><div class="life-item-icon">🍶</div><div class="life-item-name">Sake &amp; Shochu</div><div class="life-item-desc">Regional sake with tasting notes. Local craft beer and premium shochu</div></div>
+        <div class="life-item"><div class="life-item-icon">🍓</div><div class="life-item-name">Premium Fruit</div><div class="life-item-desc">Amaou strawberries, Shine Muscat grapes, Shingen peaches — seasonal</div></div>
+        <div class="life-item"><div class="life-item-icon">🫙</div><div class="life-item-name">Dashi &amp; Miso</div><div class="life-item-desc">Premium dashi stocks, artisan miso, soy sauce. Take Japan's flavour home</div></div>
+        <div class="life-item"><div class="life-item-icon">🥚</div><div class="life-item-name">Tamagoyaki</div><div class="life-item-desc">Freshly rolled egg omelette — buy warm and eat on your balcony</div></div>
+        <div class="life-item"><div class="life-item-icon">🍵</div><div class="life-item-name">Matcha &amp; Tea</div><div class="life-item-desc">Ceremonial and drinking grade matcha, sencha, hojicha to take home</div></div>
       </div>
     </div>
     <div>
@@ -7237,7 +6866,7 @@ h2.section-title {
           <div class="life-ph-lbl">Seasonal Fruit &amp; Sake</div>
         </div>
         <div style="grid-column:1/3;padding:10px 12px;background:rgba(237,224,204,.06);border:1px dashed rgba(237,224,204,.15);font-size:11px;color:rgba(237,224,204,.3);text-align:center;letter-spacing:.05em;line-height:1.6;">
-          Replace with actual photos from Life Nishi-Asakusa visit<br>Sashimi counter · Bento section · Sake aisle · Seasonal fruit display
+          📸 Replace with actual photos from Life Nishi-Asakusa visit<br>Sashimi counter · Bento section · Sake aisle · Seasonal fruit display
         </div>
       </div>
     </div>
@@ -7281,16 +6910,16 @@ h2.section-title {
   </div>
 
     <div style="display:flex;gap:10px;flex-wrap:wrap;padding:0 52px 36px;">
-    <button class="grp-btn active" onclick="showGroup('couple-kids')">Couple + Young Children</button>
-    <button class="grp-btn" onclick="showGroup('couple-teens')">Couple + Teenagers</button>
-    <button class="grp-btn" onclick="showGroup('friends')">Friends / Same Age Group</button>
-    <button class="grp-btn" onclick="showGroup('multigene')">Multi-Generation Family</button>
+    <button class="grp-btn active" onclick="showGroup('couple-kids')">👨‍👩‍👧 Couple + Young Children</button>
+    <button class="grp-btn" onclick="showGroup('couple-teens')">👨‍👩‍👦 Couple + Teenagers</button>
+    <button class="grp-btn" onclick="showGroup('friends')">👯 Friends / Same Age Group</button>
+    <button class="grp-btn" onclick="showGroup('multigene')">👴👨👧 Multi-Generation Family</button>
   </div>
 
   <!-- ── GROUP: COUPLE + YOUNG KIDS ── -->
   <div class="grp-panel active" id="grp-couple-kids">
     <div style="background:var(--navy);margin:0 52px 4px;padding:20px 32px;display:flex;align-items:center;gap:14px;">
-      <span style="font-size:28px;"></span>
+      <span style="font-size:28px;">👨‍👩‍👧</span>
       <div>
         <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--cedar);margin-bottom:4px;">Best for ages 2–10</div>
         <div style="font-size:18px;font-weight:500;color:var(--ivory);">Couple with Young Children</div>
@@ -7309,7 +6938,7 @@ h2.section-title {
           <div class="place-jp">家族着物・フォトウォーク · 2–3 hrs</div>
           <div class="place-tags"><span class="ptag hl">Kids welcome</span><span class="ptag">Full family</span><span class="ptag">Professional photos</span></div>
           <p class="place-desc">Everyone in the family gets dressed — parents in yukata, children in mini kimono — then a professional photographer walks you through Sensoji, Nakamise, and the back streets for 90 minutes. Children aged 2+ are welcome. The images are usually the trip's best photographs. We book the shop and photographer as a package.</p>
-          <div class="place-meta"><span class="place-walk">3 min walk</span><span class="place-price">¥8,000–18,000 / family</span><span class="place-hours">10:00–17:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 3 min walk</span><span class="place-price">¥8,000–18,000 / family</span><span class="place-hours">10:00–17:00</span></div>
         </div>
       </div>
 
@@ -7323,7 +6952,7 @@ h2.section-title {
           <div class="place-jp">親子寿司教室 · Asakusa studio</div>
           <div class="place-tags"><span class="ptag hl">Kids from age 4</span><span class="ptag">English</span><span class="ptag">You eat what you make</span></div>
           <p class="place-desc">A 90-minute guided class where parents and children roll sushi together — maki, temaki, and onigiri. The instructor is English-speaking, the session ends with eating everything you made, and children are given their own small rolling mat to take home. One of the most joyful group activities we recommend.</p>
-          <div class="place-meta"><span class="place-walk">8 min walk</span><span class="place-price">¥4,500–6,000 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 8 min walk</span><span class="place-price">¥4,500–6,000 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7337,7 +6966,7 @@ h2.section-title {
           <div class="place-jp">人力車 · 浅草観光コース</div>
           <div class="place-tags"><span class="ptag">All ages</span><span class="ptag">English narration</span><span class="ptag">Private</span></div>
           <p class="place-desc">Young children are absolutely captivated by the rickshaw experience — sitting elevated above the street, pulled through the back lanes of old Asakusa by a young operator in traditional uniform. The 30-minute neighbourhood course takes you through streets no tourist map shows. Operators speak English and know every story.</p>
-          <div class="place-meta"><span class="place-walk">5 min walk</span><span class="place-price">¥3,000–8,000 / person</span><span class="place-hours">10:00–17:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 5 min walk</span><span class="place-price">¥3,000–8,000 / person</span><span class="place-hours">10:00–17:00</span></div>
         </div>
       </div>
 
@@ -7351,7 +6980,7 @@ h2.section-title {
           <div class="place-jp">和菓子作り体験 · Nerikiri craft</div>
           <div class="place-tags"><span class="ptag hl">Kids from age 5</span><span class="ptag">You take them home</span><span class="ptag">Seasonal designs</span></div>
           <p class="place-desc">Children shape colourful nerikiri (sweet bean paste confections) into seasonal forms — cherry blossoms, autumn leaves, rabbits — guided by a craft instructor. Parents make their own alongside. You leave with a small box of your creations, wrapped beautifully. Completely mess-free and one of the most Instagram-friendly activities in Asakusa.</p>
-          <div class="place-meta"><span class="place-walk">6 min walk</span><span class="place-price">¥3,500–5,000 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 6 min walk</span><span class="place-price">¥3,500–5,000 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7365,7 +6994,7 @@ h2.section-title {
           <div class="place-jp">浅草寺 ガイドウォーク · MoriKoYa exclusive</div>
           <div class="place-tags"><span class="ptag hl">Free for guests</span><span class="ptag">All ages</span><span class="ptag">Staff guided</span></div>
           <p class="place-desc">Our morning guide takes small groups (up to 8 people) to Sensoji at dawn — explaining the legends of the temple founding in 628 CE, the incense smoke ritual, the fortune slips, and the dragon carvings children always find. Best at 06:30 before the first tourists arrive. Complimentary for MoriKoYa guests, on request.</p>
-          <div class="place-meta"><span class="place-walk">5 min walk</span><span class="place-price">Complimentary</span><span class="place-hours">06:30 daily (request)</span></div>
+          <div class="place-meta"><span class="place-walk">📍 5 min walk</span><span class="place-price">Complimentary</span><span class="place-hours">06:30 daily (request)</span></div>
         </div>
       </div>
 
@@ -7379,7 +7008,7 @@ h2.section-title {
           <div class="place-jp">食べ歩きルート · 仲見世通り〜西浅草</div>
           <div class="place-tags"><span class="ptag hl">Curated route</span><span class="ptag">8–10 stops</span><span class="ptag">All ages</span></div>
           <p class="place-desc">Our printed Family Food Map walks you through 8 stops: ningyo-yaki (doll cakes), melonpan, freshly grilled senbei, kakigori shaved ice, taiyaki fish cakes, and more. We note which stalls let children watch the cooking process — always a highlight for ages 3–10. The full route takes about 2 hours at a comfortable pace.</p>
-          <div class="place-meta"><span class="place-walk">From your door</span><span class="place-price">¥1,000–3,000 / family</span><span class="place-hours">10:00–17:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 From your door</span><span class="place-price">¥1,000–3,000 / family</span><span class="place-hours">10:00–17:00</span></div>
         </div>
       </div>
 
@@ -7389,7 +7018,7 @@ h2.section-title {
   <!-- ── GROUP: COUPLE + TEENAGERS ── -->
   <div class="grp-panel" id="grp-couple-teens" style="display:none;">
     <div style="background:var(--slate);margin:0 52px 4px;padding:20px 32px;display:flex;align-items:center;gap:14px;">
-      <span style="font-size:28px;"></span>
+      <span style="font-size:28px;">👨‍👩‍👦</span>
       <div>
         <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--cedar);margin-bottom:4px;">Best for ages 12–19</div>
         <div style="font-size:18px;font-weight:500;color:var(--ivory);">Couple with Teenagers</div>
@@ -7408,7 +7037,7 @@ h2.section-title {
           <div class="place-jp">秋葉原 · Electric Town · Direct Tsukuba Express</div>
           <div class="place-tags"><span class="ptag hl">11 min from hotel</span><span class="ptag">Anime · Manga · Gaming</span><span class="ptag">All day</span></div>
           <p class="place-desc">MoriKoYa is on the Tsukuba Express Line — Akihabara is a direct 11-minute ride. The world's largest concentration of anime, manga, retro gaming, electronics, and figure shops. Yodobashi Camera (8 floors), Mandarake Complex, Super Potato retro games, Radio Kaikan. We prepare a printed Akihabara guide for teenagers covering each type of shop by floor and genre.</p>
-          <div class="place-meta"><span class="place-walk">11 min (TX line)</span><span class="place-price">Budget flexible</span><span class="place-hours">10:00–21:00</span></div>
+          <div class="place-meta"><span class="place-walk">🚃 11 min (TX line)</span><span class="place-price">Budget flexible</span><span class="place-hours">10:00–21:00</span></div>
         </div>
       </div>
 
@@ -7422,7 +7051,7 @@ h2.section-title {
           <div class="place-jp">陶芸体験 · Togeikai studio</div>
           <div class="place-tags"><span class="ptag sg">Hands-on</span><span class="ptag">Teen-friendly</span><span class="ptag">Take home in 3 weeks</span></div>
           <p class="place-desc">A 2-hour English-taught ceramics session where everyone throws on a wheel or hand-builds their own piece. Teenagers typically find this genuinely satisfying — creating something real and functional. The finished piece is glazed by the studio, fired, and shipped to your home address within 3 weeks. We book the studio session as a group.</p>
-          <div class="place-meta"><span class="place-walk">15 min walk</span><span class="place-price">¥4,000–6,500 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 15 min walk</span><span class="place-price">¥4,000–6,500 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7436,7 +7065,7 @@ h2.section-title {
           <div class="place-jp">書道体験 · Japanese brush writing</div>
           <div class="place-tags"><span class="ptag">Brush writing</span><span class="ptag">Kanji your name</span><span class="ptag">English taught</span></div>
           <p class="place-desc">Learn to write your name in kanji, then a seasonal poem, in 90 minutes with an English-speaking shodo master. Teenagers often find this unexpectedly meditative. You leave with 4–5 finished works on washi paper, rolled for travel. One of the most popular "surprisingly I liked it" activities for teens who expected to be bored.</p>
-          <div class="place-meta"><span class="place-walk">10 min walk</span><span class="place-price">¥3,000–4,500 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 10 min walk</span><span class="place-price">¥3,000–4,500 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7450,7 +7079,7 @@ h2.section-title {
           <div class="place-jp">弓道体験 · Traditional martial art</div>
           <div class="place-tags"><span class="ptag hl">Teen favourite</span><span class="ptag">14+ recommended</span><span class="ptag">English guided</span></div>
           <p class="place-desc">Kyudo is the Japanese martial art of archery — slow, meditative, and precise. A 90-minute guided session in a traditional dojo where you learn the formal standing posture, draw, and release sequence before shooting at the target. Teenagers who try this almost universally want to come back. We arrange the booking with a dojo 20 minutes away.</p>
-          <div class="place-meta"><span class="place-walk">20 min</span><span class="place-price">¥4,000–6,000 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">🚃 20 min</span><span class="place-price">¥4,000–6,000 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7464,7 +7093,7 @@ h2.section-title {
           <div class="place-jp">原宿・渋谷 · Fashion & Street culture</div>
           <div class="place-tags"><span class="ptag">Street fashion</span><span class="ptag">Takeshita-dori</span><span class="ptag">Shibuya crossing</span></div>
           <p class="place-desc">25 minutes from Asakusa (Ginza line direct). Takeshita-dori in Harajuku is Japan's teen fashion street — Daiso, thrift shops, crêpe stalls, and subculture fashion. Shibuya Crossing (5 min walk) is the world's busiest pedestrian intersection. We prepare a printed teen itinerary that loops both in one afternoon while parents explore Omotesando nearby.</p>
-          <div class="place-meta"><span class="place-walk">25 min</span><span class="place-price">Budget flexible</span><span class="place-hours">All day</span></div>
+          <div class="place-meta"><span class="place-walk">🚃 25 min</span><span class="place-price">Budget flexible</span><span class="place-hours">All day</span></div>
         </div>
       </div>
 
@@ -7478,7 +7107,7 @@ h2.section-title {
           <div class="place-jp">ホッピー通り · 家族で昭和の夜</div>
           <div class="place-tags"><span class="ptag">Walk-in</span><span class="ptag">Yakitori</span><span class="ptag">Soft drinks for teens</span></div>
           <p class="place-desc">Hoppy Street is one of the rare places in Tokyo where the izakaya atmosphere genuinely works for families — open-fronted stalls, communal benches, charcoal grills visible, and an energy that teenagers find refreshingly un-sanitised. Parents drink Hoppy, teenagers order karaage and edamame. The total bill for 4 people rarely exceeds ¥6,000.</p>
-          <div class="place-meta"><span class="place-walk">4 min walk</span><span class="place-price">¥1,500–2,000 / person</span><span class="place-hours">11:00–22:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 4 min walk</span><span class="place-price">¥1,500–2,000 / person</span><span class="place-hours">11:00–22:00</span></div>
         </div>
       </div>
 
@@ -7488,7 +7117,7 @@ h2.section-title {
   <!-- ── GROUP: FRIENDS ── -->
   <div class="grp-panel" id="grp-friends" style="display:none;">
     <div style="background:var(--sage);margin:0 52px 4px;padding:20px 32px;display:flex;align-items:center;gap:14px;">
-      <span style="font-size:28px;"></span>
+      <span style="font-size:28px;">👯</span>
       <div>
         <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);margin-bottom:4px;">2–12 people · Any age</div>
         <div style="font-size:18px;font-weight:500;color:var(--navy);">Friends / Same-Age Group</div>
@@ -7507,7 +7136,7 @@ h2.section-title {
           <div class="place-jp">茶会体験 · 浅草 Private session</div>
           <div class="place-tags"><span class="ptag hl">Up to 14 guests</span><span class="ptag">English master</span><span class="ptag">Seasonal wagashi</span></div>
           <p class="place-desc">A private 90-minute tea ceremony session booked exclusively for your group — no strangers, no shared sessions. The English-speaking tea master explains the philosophy of ichi-go ichi-e (once in a lifetime encounter), prepares matcha for each guest, and serves seasonal wagashi. Groups up to 14 can be accommodated. We arrange in advance at competitive group rates.</p>
-          <div class="place-meta"><span class="place-walk">10 min walk</span><span class="place-price">¥4,000–6,500 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 10 min walk</span><span class="place-price">¥4,000–6,500 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7521,7 +7150,7 @@ h2.section-title {
           <div class="place-jp">グループ着物撮影会 · 最大20名</div>
           <div class="place-tags"><span class="ptag hl">Up to 20 people</span><span class="ptag">Professional photographer</span><span class="ptag">All included</span></div>
           <p class="place-desc">The classic Asakusa group experience — everyone dressed in kimono simultaneously, then walked through the neighbourhood by a bilingual guide while a professional photographer captures group and individual portraits. The final images are delivered digitally within 48 hours. Groups of 6–20 are the ideal size for this experience. We coordinate the entire day.</p>
-          <div class="place-meta"><span class="place-walk">3 min walk</span><span class="place-price">¥8,000–15,000 / person</span><span class="place-hours">10:00–16:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 3 min walk</span><span class="place-price">¥8,000–15,000 / person</span><span class="place-hours">10:00–16:00</span></div>
         </div>
       </div>
 
@@ -7535,7 +7164,7 @@ h2.section-title {
           <div class="place-jp">築地仕入れ → 浅草でプライベートディナー</div>
           <div class="place-tags"><span class="ptag">Market visit</span><span class="ptag">Private chef</span><span class="ptag">Your kitchen</span></div>
           <p class="place-desc">Morning visit to Tsukiji Outer Market (30 min by taxi) to choose the fish, then a private chef comes to your MoriKoYa suite to prepare sashimi, grilled fish, and seasonal sides for the group. Requires the 3BR suite or two adjoining 2BR suites. We arrange the chef, the market guide, and coordinate timing. An extraordinary group dinner experience that few hotels in Tokyo can offer.</p>
-          <div class="place-meta"><span class="place-walk">30 min (Tsukiji)</span><span class="place-price">¥15,000–25,000 / person</span><span class="place-hours">By booking (2 days ahead)</span></div>
+          <div class="place-meta"><span class="place-walk">🚕 30 min (Tsukiji)</span><span class="place-price">¥15,000–25,000 / person</span><span class="place-hours">By booking (2 days ahead)</span></div>
         </div>
       </div>
 
@@ -7549,7 +7178,7 @@ h2.section-title {
           <div class="place-jp">陶芸グループ体験 · Max 15 persons</div>
           <div class="place-tags"><span class="ptag sg">Group up to 15</span><span class="ptag">Wheel + handbuilding</span><span class="ptag">Shipped home</span></div>
           <p class="place-desc">A dedicated 2.5-hour ceramics session for your group in a private studio space. Each person chooses between throwing on a wheel or hand-building. The studio fires and glazes everything, then ships finished pieces to each person's home address worldwide (shipping cost at cost). The process of everyone making something simultaneously creates a surprisingly social atmosphere.</p>
-          <div class="place-meta"><span class="place-walk">15 min walk</span><span class="place-price">¥5,000–7,000 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 15 min walk</span><span class="place-price">¥5,000–7,000 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7563,7 +7192,7 @@ h2.section-title {
           <div class="place-jp">隅田川花火大会 · 特別鑑賞席</div>
           <div class="place-tags"><span class="ptag hl">July (last Saturday)</span><span class="ptag">MoriKoYa rooftop</span><span class="ptag">Private viewing</span></div>
           <p class="place-desc">The Sumida River Fireworks Festival (since 1733) is visible from MoriKoYa's upper floors. On the night, we arrange a private rooftop viewing setup for our guests — yukata rental, sake and beer service, and a clear line of sight to 20,000 shells over the Sumida River. This is the single best night to be in Asakusa all year. Book July dates 6+ months ahead.</p>
-          <div class="place-meta"><span class="place-walk">From hotel</span><span class="place-price">¥3,000–5,000 / person</span><span class="place-hours">July · 19:05–20:30</span></div>
+          <div class="place-meta"><span class="place-walk">📍 From hotel</span><span class="place-price">¥3,000–5,000 / person</span><span class="place-hours">July · 19:05–20:30</span></div>
         </div>
       </div>
 
@@ -7577,7 +7206,7 @@ h2.section-title {
           <div class="place-jp">日本酒プライベートテイスティング</div>
           <div class="place-tags"><span class="ptag">8–20 people</span><span class="ptag">In-room or venue</span><span class="ptag">Sommelier guided</span></div>
           <p class="place-desc">A sake sommelier brings 8–12 regional nihonshu from across Japan for a 90-minute guided tasting with food pairings. Can be held in your MoriKoYa suite (3BR) or arranged at a local sake venue. The sommelier speaks English and explains regional differences, brewing methods, and how to read sake labels. An ideal group dinner warm-up.</p>
-          <div class="place-meta"><span class="place-walk">In-suite or local venue</span><span class="place-price">¥6,000–9,000 / person</span><span class="place-hours">By booking (eve.)</span></div>
+          <div class="place-meta"><span class="place-walk">📍 In-suite or local venue</span><span class="place-price">¥6,000–9,000 / person</span><span class="place-hours">By booking (eve.)</span></div>
         </div>
       </div>
 
@@ -7587,7 +7216,7 @@ h2.section-title {
   <!-- ── GROUP: MULTI-GENERATION ── -->
   <div class="grp-panel" id="grp-multigene" style="display:none;">
     <div style="background:var(--cedar);margin:0 52px 4px;padding:20px 32px;display:flex;align-items:center;gap:14px;">
-      <span style="font-size:28px;"></span>
+      <span style="font-size:28px;">👴👨👧</span>
       <div>
         <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);margin-bottom:4px;">Grandparents · Parents · Children · All together</div>
         <div style="font-size:18px;font-weight:500;color:var(--navy);">Multi-Generation Family</div>
@@ -7606,7 +7235,7 @@ h2.section-title {
           <div class="place-jp">三世代 浅草寺まいり · Staff guided</div>
           <div class="place-tags"><span class="ptag hl">All ages welcome</span><span class="ptag">Slow pace option</span><span class="ptag">Complimentary</span></div>
           <p class="place-desc">Our staff-guided morning walk to Sensoji is specifically designed for groups with a wide age range. The route is flat and wheelchair-accessible. Grandparents can purchase omamori (protective charms) at the temple shop; children can pull fortunes from the omikuji box; parents can offer incense at the main hall. We pace to the slowest member of the group. Complimentary for MoriKoYa guests.</p>
-          <div class="place-meta"><span class="place-walk">5 min walk</span><span class="place-price">Complimentary</span><span class="place-hours">06:30–09:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 5 min walk</span><span class="place-price">Complimentary</span><span class="place-hours">06:30–09:00</span></div>
         </div>
       </div>
 
@@ -7620,7 +7249,7 @@ h2.section-title {
           <div class="place-jp">人力車 + 徒歩 組み合わせコース</div>
           <div class="place-tags"><span class="ptag hl">Mobility-friendly</span><span class="ptag">Mixed pace</span><span class="ptag">60 min</span></div>
           <p class="place-desc">The ideal multi-generation solution: grandparents ride in the rickshaw (elevated, comfortable, no walking required), while parents and children walk alongside at the same pace. The operator narrates in English for everyone simultaneously. The route covers Sensoji's back streets that are genuinely inaccessible by any other means. We book two rickshaws side-by-side for larger groups.</p>
-          <div class="place-meta"><span class="place-walk">5 min walk</span><span class="place-price">¥3,000–5,000 / person</span><span class="place-hours">10:00–17:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 5 min walk</span><span class="place-price">¥3,000–5,000 / person</span><span class="place-hours">10:00–17:00</span></div>
         </div>
       </div>
 
@@ -7634,7 +7263,7 @@ h2.section-title {
           <div class="place-jp">浅草今半 · 家族会食 · Since 1895</div>
           <div class="place-tags"><span class="ptag hl">Since 1895</span><span class="ptag">Private room available</span><span class="ptag">All ages</span></div>
           <p class="place-desc">Asakusa Imahan offers private tatami rooms for family groups of 6–20 — no shared dining with strangers, a formal table layout that grandparents appreciate, and sukiyaki cooked tableside so everyone participates. We request the private room and arrange the reservation in Japanese weeks in advance. One of the most memorable group dinners in all of Asakusa.</p>
-          <div class="place-meta"><span class="place-walk">6 min walk</span><span class="place-price">¥10,000–18,000 / person</span><span class="place-hours">Reserve 2+ weeks ahead</span></div>
+          <div class="place-meta"><span class="place-walk">📍 6 min walk</span><span class="place-price">¥10,000–18,000 / person</span><span class="place-hours">Reserve 2+ weeks ahead</span></div>
         </div>
       </div>
 
@@ -7648,7 +7277,7 @@ h2.section-title {
           <div class="place-jp">家族料理教室 · 全世代参加可能</div>
           <div class="place-tags"><span class="ptag hl">Age 4 to 90+</span><span class="ptag">English</span><span class="ptag">You eat together</span></div>
           <p class="place-desc">A 3-hour cooking class specifically designed for multi-generational groups — the tasks are divided so grandparents can do the detail work (rolling, folding) while children do the energy-intensive parts (kneading, mixing). The menu includes sushi, miso soup, and tamagoyaki. The session ends with the entire group eating together at one table. Sessions for up to 16 people.</p>
-          <div class="place-meta"><span class="place-walk">10 min walk</span><span class="place-price">¥8,000–12,000 / person</span><span class="place-hours">By booking</span></div>
+          <div class="place-meta"><span class="place-walk">📍 10 min walk</span><span class="place-price">¥8,000–12,000 / person</span><span class="place-hours">By booking</span></div>
         </div>
       </div>
 
@@ -7662,7 +7291,7 @@ h2.section-title {
           <div class="place-jp">三世代 家族着物撮影 · Formal & casual options</div>
           <div class="place-tags"><span class="ptag hl">Grandparents welcome</span><span class="ptag">Elderly-friendly dressing</span><span class="ptag">Digital + prints</span></div>
           <p class="place-desc">A kimono dressing session for the whole family — the shop provides elderly-appropriate formal options for grandparents, fun yukata for parents, and cute children's kimono. A professional photographer then takes formal group portraits and candid street shots. The resulting images — all three generations in traditional dress in front of Sensoji — are typically the most treasured photographs from the entire trip.</p>
-          <div class="place-meta"><span class="place-walk">3 min walk</span><span class="place-price">¥8,000–20,000 / group</span><span class="place-hours">10:00–16:00</span></div>
+          <div class="place-meta"><span class="place-walk">📍 3 min walk</span><span class="place-price">¥8,000–20,000 / group</span><span class="place-hours">10:00–16:00</span></div>
         </div>
       </div>
 
@@ -7676,7 +7305,7 @@ h2.section-title {
           <div class="place-jp">オーダーメイド グループ旅程作成</div>
           <div class="place-tags"><span class="ptag hl">Free for guests</span><span class="ptag">Full trip planning</span><span class="ptag">All logistics</span></div>
           <p class="place-desc">For groups of 6 or more, we create a custom day-by-day itinerary that balances the different ages and energy levels in your group. We include split-group options (teenagers go to Akihabara while grandparents rest, then reunite for dinner), accessible venue alternatives, restaurant timings, and transport logistics. Send us your group composition and dates 2+ weeks before arrival.</p>
-          <div class="place-meta"><span class="place-walk">At MoriKoYa</span><span class="place-price">Complimentary</span><span class="place-hours">Request in advance</span></div>
+          <div class="place-meta"><span class="place-walk">📍 At MoriKoYa</span><span class="place-price">Complimentary</span><span class="place-hours">Request in advance</span></div>
         </div>
       </div>
 
@@ -7823,7 +7452,7 @@ h2.section-title {
         <div class="place-jp">Electric Town · Anime · Gaming · Electronics</div>
         <div class="place-tags"><span class="ptag hl">11 min</span><span class="ptag">Anime · Manga</span><span class="ptag">Retro gaming</span><span class="ptag">Electronics</span></div>
         <p class="place-desc">The world's largest concentration of anime merchandise, retro gaming, electronics, and otaku culture. Yodobashi Camera (8 floors of electronics), Mandarake Complex (rare anime), Super Potato (Famicom to PS5), Radio Kaikan, AKB48 Theatre. We provide a printed Akihabara guide by shop type and floor. Best for teenager groups and anime fans of any age.</p>
-        <div class="place-meta"><span class="place-walk">TX line · 11 min direct</span><span class="place-price">Budget flexible</span><span class="place-hours">10:00–21:00</span></div>
+        <div class="place-meta"><span class="place-walk">🚃 TX line · 11 min direct</span><span class="place-price">Budget flexible</span><span class="place-hours">10:00–21:00</span></div>
       </div>
     </div>
 
@@ -7837,7 +7466,7 @@ h2.section-title {
         <div class="place-jp">渋谷・原宿 · Fashion & Street culture</div>
         <div class="place-tags"><span class="ptag">25 min</span><span class="ptag">Fashion</span><span class="ptag">Shibuya crossing</span><span class="ptag">Takeshita-dori</span></div>
         <p class="place-desc">Shibuya Crossing — the world's busiest pedestrian scramble — and Harajuku's Takeshita-dori fashion street are 25 minutes from Asakusa by Ginza Line direct. Best combined: Harajuku in the morning (crepes + fashion), Omotesando for parents (luxury shopping), Shibuya crossing at rush hour. We prepare a combined itinerary on request.</p>
-        <div class="place-meta"><span class="place-walk">Ginza line · 25 min</span><span class="place-price">Budget flexible</span><span class="place-hours">All day</span></div>
+        <div class="place-meta"><span class="place-walk">🚃 Ginza line · 25 min</span><span class="place-price">Budget flexible</span><span class="place-hours">All day</span></div>
       </div>
     </div>
 
@@ -7851,7 +7480,7 @@ h2.section-title {
         <div class="place-jp">上野 · Tokyo National Museum · Zoo · Ameyoko</div>
         <div class="place-tags"><span class="ptag hl">12 min</span><span class="ptag">National Museum</span><span class="ptag">Tokyo Zoo</span><span class="ptag">Ameyoko market</span></div>
         <p class="place-desc">Ueno is 12 minutes by Ginza Line — Japan's most dense cluster of world-class museums. Tokyo National Museum (world's largest Japanese art collection), Ueno Zoo (giant pandas), the National Museum of Nature and Science, and Ueno Park with its 1,200 cherry trees. The Ameyoko market below the tracks is extraordinary for food and discount goods. Perfect family full-day.</p>
-        <div class="place-meta"><span class="place-walk">Ginza line · 12 min</span><span class="place-price">¥500–1,000 museum entry</span><span class="place-hours">09:30–17:00</span></div>
+        <div class="place-meta"><span class="place-walk">🚃 Ginza line · 12 min</span><span class="place-price">¥500–1,000 museum entry</span><span class="place-hours">09:30–17:00</span></div>
       </div>
     </div>
 
@@ -7865,7 +7494,7 @@ h2.section-title {
         <div class="place-jp">日光 · Toshogu Shrine · Waterfalls · Full day</div>
         <div class="place-tags"><span class="ptag hl">2 hrs by train</span><span class="ptag">UNESCO</span><span class="ptag">Toshogu shrine</span><span class="ptag">Kegon waterfall</span></div>
         <p class="place-desc">Nikko is 2 hours from Asakusa (Tobu Nikko direct from Asakusa Station). The Toshogu Shrine complex (UNESCO World Heritage) is among Japan's most ornate architectural achievements. Kegon Waterfall drops 97 metres. The cedar-lined approach to the shrine is among the most atmospheric forest walks in Japan. Best in autumn (Oct–Nov) for incredible foliage.</p>
-        <div class="place-meta"><span class="place-walk">Tobu line · 2 hrs</span><span class="place-price">¥1,300 shrine entry</span><span class="place-hours">Full day</span></div>
+        <div class="place-meta"><span class="place-walk">🚃 Tobu line · 2 hrs</span><span class="place-price">¥1,300 shrine entry</span><span class="place-hours">Full day</span></div>
       </div>
     </div>
 
@@ -7879,7 +7508,7 @@ h2.section-title {
         <div class="place-jp">谷中 · Shitamachi · 古い東京の面影</div>
         <div class="place-tags"><span class="ptag sg">20 min</span><span class="ptag">Shitamachi feel</span><span class="ptag">Cat café</span><span class="ptag">Cemetery walk</span></div>
         <p class="place-desc">Yanaka is what all of Tokyo would look like if it hadn't been bombed in 1945 — narrow streets, wooden shopfronts, a cemetery with cats, artisan workshops, and the Yanaka Ginza shotengai. 20 minutes from Asakusa by subway. Profoundly peaceful and completely unlike tourist Tokyo. Our guests who visit Yanaka consistently report it as the most "real" thing they did in Tokyo.</p>
-        <div class="place-meta"><span class="place-walk">20 min</span><span class="place-price">Free to explore</span><span class="place-hours">All day</span></div>
+        <div class="place-meta"><span class="place-walk">🚃 20 min</span><span class="place-price">Free to explore</span><span class="place-hours">All day</span></div>
       </div>
     </div>
 
@@ -7893,7 +7522,7 @@ h2.section-title {
         <div class="place-jp">お台場 · teamLab Planets · 夜景</div>
         <div class="place-tags"><span class="ptag">45 min</span><span class="ptag">teamLab digital art</span><span class="ptag">Tokyo Bay views</span><span class="ptag">Gundam</span></div>
         <p class="place-desc">teamLab Planets — the world's most visited digital art museum — is a 45-minute ride by Yurikamome from Shimbashi (25 min from Asakusa). Walk barefoot through rooms of infinite digital flowers, water mirrors, and immersive light. Book tickets weeks in advance. Combine with DiverCity (life-size Gundam), DECKS shopping, and Tokyo Bay night views. Best for groups of 4+ who want something genuinely unlike anything else.</p>
-        <div class="place-meta"><span class="place-walk">45 min total</span><span class="place-price">¥3,200 teamLab</span><span class="place-hours">09:00–21:00 (book ahead)</span></div>
+        <div class="place-meta"><span class="place-walk">🚃 45 min total</span><span class="place-price">¥3,200 teamLab</span><span class="place-hours">09:00–21:00 (book ahead)</span></div>
       </div>
     </div>
 
@@ -7935,19 +7564,19 @@ h2.section-title {
 
   <div class="booking-strip">
     <div>
-      <div class="bs-icon"></div>
+      <div class="bs-icon">📞</div>
       <div class="bs-title">Restaurant Reservations</div>
       <p class="bs-desc">We call on your behalf in Japanese — essential for restaurants like Otafuku, Komagata Dojo, and Asakusa Imahan which do not accept online reservations. Request through the front desk or via message before 16:00, and we'll confirm by evening. No extra charge.</p>
       <span class="bs-cta">Request a reservation →</span>
     </div>
     <div>
-      <div class="bs-icon"></div>
+      <div class="bs-icon">🗺</div>
       <div class="bs-title">Personalised Maps</div>
       <p class="bs-desc">At check-in we discuss your interests — food preferences, travel style, how far you'd like to walk — and create a personalised daily map. Not a printed tourist guide: a handwritten plan for your particular trip, with our specific recommendations marked.</p>
       <span class="bs-cta">Request on arrival →</span>
     </div>
     <div>
-      <div class="bs-icon"></div>
+      <div class="bs-icon">🎟</div>
       <div class="bs-title">Experience Booking</div>
       <p class="bs-desc">Tokyo Skytree tickets, river cruise bookings, Asakusa rickshaw tours, kimono rental, traditional theatre seats — we book all of these in advance so you don't lose time to queues. Tell us your dates and preferences before you arrive.</p>
       <span class="bs-cta">Send us your itinerary →</span>
@@ -8002,12 +7631,12 @@ h2.section-title {
   <h1>Find your way<br>to the <em>forest cabin</em></h1>
   <p class="hero-desc">MoriKoYa sits one minute from the Tsukuba Express — Tokyo's most direct airport connection. Three additional lines within 10 minutes' walk. Everything the city offers is closer than you think.</p>
   <div class="hero-tags">
-    <span class="hero-tag">TX 1 min walk</span>
-    <span class="hero-tag">Narita ~65 min</span>
-    <span class="hero-tag">Haneda ~40 min</span>
-    <span class="hero-tag">Senso-ji 2 min</span>
-    <span class="hero-tag">Day Trips</span>
-    <span class="hero-tag">FAQ</span>
+    <span class="hero-tag">🚃 TX 1 min walk</span>
+    <span class="hero-tag">✈ Narita ~65 min</span>
+    <span class="hero-tag">✈ Haneda ~40 min</span>
+    <span class="hero-tag">⛩ Senso-ji 2 min</span>
+    <span class="hero-tag">🗺 Day Trips</span>
+    <span class="hero-tag">❓ FAQ</span>
   </div>
 </section>
 
@@ -8044,14 +7673,14 @@ h2.section-title {
 </div>
 
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="sw('map',this)">Network Map</button>
-  <button class="tab-btn" onclick="sw('stations',this)">By Train</button>
-  <button class="tab-btn" onclick="sw('airport',this)">From Airport</button>
-  <button class="tab-btn" onclick="sw('taxi',this)">Taxi & Car</button>
-  <button class="tab-btn" onclick="sw('attractions',this)">Tokyo Attractions</button>
-  <button class="tab-btn" onclick="sw('daytrips',this)">Day Trips</button>
-  <button class="tab-btn" onclick="sw('walk',this)">Walking Guide</button>
-  <button class="tab-btn" onclick="sw('faq',this)">FAQ</button>
+  <button class="tab-btn active" onclick="sw('map',this)">🗺 Network Map</button>
+  <button class="tab-btn" onclick="sw('stations',this)">🚃 By Train</button>
+  <button class="tab-btn" onclick="sw('airport',this)">✈ From Airport</button>
+  <button class="tab-btn" onclick="sw('taxi',this)">🚕 Taxi & Car</button>
+  <button class="tab-btn" onclick="sw('attractions',this)">⭐ Tokyo Attractions</button>
+  <button class="tab-btn" onclick="sw('daytrips',this)">🏔 Day Trips</button>
+  <button class="tab-btn" onclick="sw('walk',this)">🚶 Walking Guide</button>
+  <button class="tab-btn" onclick="sw('faq',this)">❓ FAQ</button>
 </div>
 
 <!-- ═══════ NETWORK MAP ═══════ -->
@@ -8153,7 +7782,7 @@ h2.section-title {
   <text x="481" y="455" fill="#C4A060" font-size="11" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">↓ Shinjuku · Shibuya · Shin-Ochanomizu</text>
   <!-- Haneda bottom-left -->
   <rect x="20" y="436" width="128" height="20" rx="10" fill="#1E160C" opacity=".72"/>
-  <text x="84" y="450" fill="#C4A060" font-size="10" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">Haneda ~40 min</text>
+  <text x="84" y="450" fill="#C4A060" font-size="10" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">✈ Haneda ~40 min</text>
   <!-- Oshiage/Skytree/Narita right -->
   <rect x="880" y="165" width="162" height="20" rx="10" fill="#1E160C" opacity=".72"/>
   <text x="961" y="179" fill="#C4A060" font-size="10" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">→ Narita ✈ (via switch)</text>
@@ -8253,32 +7882,32 @@ h2.section-title {
   <!-- ════════ LANDMARK ICONS ════════ -->
 
   <!-- Senso-ji (near hotel, slightly right) -->
-  <text x="548" y="185" font-size="24" font-family="sans-serif"></text>
+  <text x="548" y="185" font-size="24" font-family="sans-serif">⛩</text>
   <text x="560" y="212" fill="#1E160C" font-size="11" font-family="Jost,sans-serif" text-anchor="middle">Senso-ji</text>
   <text x="560" y="224" fill="#8A8D95" font-size="9.5" font-family="Jost,sans-serif" text-anchor="middle">2 min</text>
 
   <!-- Kaminarimon (slightly below senso-ji) -->
-  <text x="548" y="255" font-size="20" font-family="sans-serif"></text>
+  <text x="548" y="255" font-size="20" font-family="sans-serif">🏮</text>
   <text x="560" y="276" fill="#1E160C" font-size="11" font-family="Jost,sans-serif" text-anchor="middle">Kaminarimon</text>
   <text x="560" y="287" fill="#8A8D95" font-size="9.5" font-family="Jost,sans-serif" text-anchor="middle">5 min</text>
 
   <!-- Tokyo Skytree near Oshiage -->
-  <text x="660" y="162" font-size="22" font-family="sans-serif">◆</text>
+  <text x="660" y="162" font-size="22" font-family="sans-serif">🗼</text>
   <text x="672" y="155" fill="#5B8ED6" font-size="10" font-family="Jost,sans-serif" text-anchor="middle">SKYTREE</text>
 
   <!-- Ueno Park cherry blossom -->
-  <text x="298" y="175" font-size="20" font-family="sans-serif"></text>
+  <text x="298" y="175" font-size="20" font-family="sans-serif">🌸</text>
   <text x="310" y="170" fill="#8A8D95" font-size="10" font-family="Jost,sans-serif" text-anchor="middle">Ueno Park</text>
 
   <!-- Akihabara icon -->
-  <text x="500" y="302" font-size="18" font-family="sans-serif">◆</text>
+  <text x="500" y="302" font-size="18" font-family="sans-serif">🎮</text>
   <text x="524" y="298" fill="#8A8D95" font-size="10" font-family="Jost,sans-serif">Akihabara</text>
 
   <!-- Disney at Maihama -->
-  <text x="840" y="350" font-size="18" font-family="sans-serif">◆</text>
+  <text x="840" y="350" font-size="18" font-family="sans-serif">🎡</text>
 
   <!-- teamLab between Akihabara and Disney -->
-  <text x="640" y="370" font-size="18" font-family="sans-serif">◆</text>
+  <text x="640" y="370" font-size="18" font-family="sans-serif">🌊</text>
   <text x="652" y="393" fill="#8A8D95" font-size="10" font-family="Jost,sans-serif" text-anchor="middle">teamLab</text>
   <text x="652" y="405" fill="#8A8D95" font-size="9.5" font-family="Jost,sans-serif" text-anchor="middle">35min</text>
 
@@ -8338,8 +7967,8 @@ h2.section-title {
         <div class="gmap-addr">〒111-0035 東京都台東区西浅草3丁目20番13号 · GPS 35.7126°N, 139.7945°E</div>
       </div>
       <div class="addr-btns">
-        <button class="copy-btn" onclick="cp(this,'〒111-0035 東京都台東区西浅草3丁目20番13号')">Copy Japanese</button>
-        <a class="copy-btn" href="https://maps.google.com/?q=35.7126,139.7945" target="_blank">Open in Maps</a>
+        <button class="copy-btn" onclick="cp(this,'〒111-0035 東京都台東区西浅草3丁目20番13号')">📋 Copy Japanese</button>
+        <a class="copy-btn" href="https://maps.google.com/?q=35.7126,139.7945" target="_blank">🗺 Open in Maps</a>
       </div>
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800!2d139.7945!3d35.7126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ecf5b3ae99d%3A0x0!2z5p2x5qCH5Yy65Y6f5p2x5Yy65biC6KW_77yT5LiB55uu77yS77yQ5Y2D77yR77yT!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp&q=西浅草3丁目20番13号+台東区&zoom=17" allowfullscreen loading="lazy" title="MoriKoYa Hotel Map"></iframe>
@@ -8352,15 +7981,15 @@ h2.section-title {
       <div class="addr-jp">〒111-0035 東京都台東区西浅草3丁目20番13号</div>
       <div class="addr-en">3-20-13 Nishi-Asakusa, Taito-ku, Tokyo, 111-0035, Japan</div>
       <div class="addr-btns">
-        <button class="copy-btn" onclick="cp(this,'〒111-0035 東京都台東区西浅草3丁目20番13号')">Copy Japanese Address</button>
-        <button class="copy-btn" onclick="cp(this,'3-20-13 Nishi-Asakusa, Taito-ku, Tokyo 111-0035 Japan')">Copy English Address</button>
+        <button class="copy-btn" onclick="cp(this,'〒111-0035 東京都台東区西浅草3丁目20番13号')">📋 Copy Japanese Address</button>
+        <button class="copy-btn" onclick="cp(this,'3-20-13 Nishi-Asakusa, Taito-ku, Tokyo 111-0035 Japan')">📋 Copy English Address</button>
       </div>
     </div>
     <div style="min-width:260px">
       <div class="addr-label">Show Taxi Driver · タクシー用</div>
       <div style="font-family:'Noto Serif JP',serif;font-size:22px;color:var(--navy);margin-bottom:6px">東京都台東区西浅草3丁目20番13号</div>
       <div style="font-size:13.5px;color:var(--mid);font-weight:300">森小屋（MoriKoYa）ホテル前で降車をお願いします</div>
-      <button class="copy-btn" style="margin-top:14px" onclick="cp(this,'東京都台東区西浅草3丁目20番13号 森小屋ホテル前')">Copy for Taxi</button>
+      <button class="copy-btn" style="margin-top:14px" onclick="cp(this,'東京都台東区西浅草3丁目20番13号 森小屋ホテル前')">📋 Copy for Taxi</button>
     </div>
   </div>
 </section>
@@ -8389,37 +8018,37 @@ h2.section-title {
         <div class="sc-dest-label">Where can I go? · 行き先</div>
         <div class="sc-dest-list">
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Akihabara</span>
+            <span class="sc-dest-place">🎮 Akihabara</span>
             <span class="sc-dest-time">8 min</span>
             <span class="sc-dest-note">1 stop direct — electronics, anime, retro gaming</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Shin-Ochanomizu</span>
+            <span class="sc-dest-place">🏙️ Shin-Ochanomizu</span>
             <span class="sc-dest-time">16 min</span>
             <span class="sc-dest-note">Transfer for Marunouchi &amp; central business district</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Shinjuku</span>
+            <span class="sc-dest-place">🗼 Shinjuku</span>
             <span class="sc-dest-time">24 min</span>
             <span class="sc-dest-note">Via Shin-Ochanomizu transfer · Gyoen Garden, nightlife</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Shibuya</span>
+            <span class="sc-dest-place">🌿 Shibuya</span>
             <span class="sc-dest-time">30 min</span>
             <span class="sc-dest-note">Via Akihabara + JR transfer · Scramble Crossing</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">teamLab Planets</span>
+            <span class="sc-dest-place">🌊 teamLab Planets</span>
             <span class="sc-dest-time">35 min</span>
             <span class="sc-dest-note">TX → Shin-Kiba → Yurikamome to Toyosu</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Disney Resort</span>
+            <span class="sc-dest-place">🎡 Disney Resort</span>
             <span class="sc-dest-time">45 min</span>
             <span class="sc-dest-note">TX → Akihabara → JR Keiyo Line to Maihama</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Narita Airport</span>
+            <span class="sc-dest-place">✈ Narita Airport</span>
             <span class="sc-dest-time">~65 min</span>
             <span class="sc-dest-note">TX → Akihabara → N'EX Narita Express · ¥3,280</span>
           </div>
@@ -8428,7 +8057,7 @@ h2.section-title {
     </div>
 
         <div class="station-card" style="--line-color:#F5861D">
-      <div class="sc-walk">8 minutes walk</div>
+      <div class="sc-walk">🚶 8 minutes walk</div>
       <div class="sc-name">Asakusa Station</div>
       <div class="sc-jp">浅草駅（東京メトロ銀座線 G-19）</div>
       <div class="sc-lines">
@@ -8440,32 +8069,32 @@ h2.section-title {
         <div class="sc-dest-label">Where can I go? · 行き先</div>
         <div class="sc-dest-list">
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Ueno</span>
+            <span class="sc-dest-place">🌸 Ueno</span>
             <span class="sc-dest-time">8 min</span>
             <span class="sc-dest-note">3 stops · National Museum, Zoo, cherry blossoms</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Nihonbashi</span>
+            <span class="sc-dest-place">🏛️ Nihonbashi</span>
             <span class="sc-dest-time">15 min</span>
             <span class="sc-dest-note">Historic commercial heart of Edo-period Tokyo</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Ginza</span>
+            <span class="sc-dest-place">💎 Ginza</span>
             <span class="sc-dest-time">22 min</span>
             <span class="sc-dest-note">Tokyo's luxury shopping boulevard · Tsukiji nearby</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Omotesando</span>
+            <span class="sc-dest-place">🎨 Omotesando</span>
             <span class="sc-dest-time">30 min</span>
             <span class="sc-dest-note">Flagship boutiques, architecture, Nezu Museum</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Harajuku</span>
+            <span class="sc-dest-place">👗 Harajuku</span>
             <span class="sc-dest-time">33 min</span>
             <span class="sc-dest-note">Takeshita-dori street fashion + Meiji Shrine</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Shibuya</span>
+            <span class="sc-dest-place">🌿 Shibuya</span>
             <span class="sc-dest-time">35 min</span>
             <span class="sc-dest-note">End of line · Scramble Crossing, Cerulean Tower</span>
           </div>
@@ -8474,7 +8103,7 @@ h2.section-title {
     </div>
 
         <div class="station-card" style="--line-color:#E8001C">
-      <div class="sc-walk">8 minutes walk</div>
+      <div class="sc-walk">🚶 8 minutes walk</div>
       <div class="sc-name">Asakusa Station</div>
       <div class="sc-jp">浅草駅（都営浅草線 A-18）</div>
       <div class="sc-lines">
@@ -8486,27 +8115,27 @@ h2.section-title {
         <div class="sc-dest-label">Where can I go? · 行き先</div>
         <div class="sc-dest-list">
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Oshiage / Skytree</span>
+            <span class="sc-dest-place">🗼 Oshiage / Skytree</span>
             <span class="sc-dest-time">12 min</span>
             <span class="sc-dest-note">Toward Narita direction · World's 2nd tallest tower</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Tsukiji</span>
+            <span class="sc-dest-place">🐟 Tsukiji</span>
             <span class="sc-dest-time">18 min</span>
             <span class="sc-dest-note">Outer market, street sushi, tamagoyaki stalls</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Nihonbashi</span>
+            <span class="sc-dest-place">🏯 Nihonbashi</span>
             <span class="sc-dest-time">20 min</span>
             <span class="sc-dest-note">Transfer for Ginza &amp; Marunouchi shopping</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Shinagawa</span>
+            <span class="sc-dest-place">🚅 Shinagawa</span>
             <span class="sc-dest-time">25 min</span>
             <span class="sc-dest-note">Shinkansen to Kyoto/Osaka, business hub</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Haneda Airport</span>
+            <span class="sc-dest-place">✈ Haneda Airport</span>
             <span class="sc-dest-time">~40 min</span>
             <span class="sc-dest-note">Direct via Keikyu through-service · No transfer · ¥570</span>
           </div>
@@ -8515,7 +8144,7 @@ h2.section-title {
     </div>
 
         <div class="station-card" style="--line-color:#F06A00">
-      <div class="sc-walk">10 minutes walk</div>
+      <div class="sc-walk">🚶 10 minutes walk</div>
       <div class="sc-name">Asakusa Station</div>
       <div class="sc-jp">浅草駅（東武スカイツリーライン）</div>
       <div class="sc-lines">
@@ -8527,27 +8156,27 @@ h2.section-title {
         <div class="sc-dest-label">Where can I go? · 行き先</div>
         <div class="sc-dest-list">
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Tokyo Skytree</span>
+            <span class="sc-dest-place">🗼 Tokyo Skytree</span>
             <span class="sc-dest-time">5 min</span>
             <span class="sc-dest-note">1 stop to Oshiage · World's 2nd tallest structure</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Nikko</span>
+            <span class="sc-dest-place">⛩ Nikko</span>
             <span class="sc-dest-time">~2 hrs</span>
             <span class="sc-dest-note">Direct "Revaty Nikko" Limited Express · UNESCO World Heritage</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Kinugawa Onsen</span>
+            <span class="sc-dest-place">♨️ Kinugawa Onsen</span>
             <span class="sc-dest-time">~2 hrs</span>
             <span class="sc-dest-note">Direct "Spacia X" · Riverside gorge ryokan &amp; outdoor baths</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Nikko Edo Village</span>
+            <span class="sc-dest-place">🏞 Nikko Edo Village</span>
             <span class="sc-dest-time">~2.5 hrs</span>
             <span class="sc-dest-note">Theme park recreating Edo-period Japan near Kinugawa</span>
           </div>
           <div class="sc-dest-row">
-            <span class="sc-dest-place">Chuzenji Lake</span>
+            <span class="sc-dest-place">🌊 Chuzenji Lake</span>
             <span class="sc-dest-time">~2.5 hrs</span>
             <span class="sc-dest-note">Via Nikko + bus · Alpine lake at 1,269m · Kegon Falls</span>
           </div>
@@ -8601,7 +8230,7 @@ h2.section-title {
       </div>
       <div class="route-body">
         <div class="step-row">
-          <div class="step-dot"></div>
+          <div class="step-dot">✈</div>
           <div>
             <div class="step-action">Land at Narita — follow signs for 鉄道 / Train</div>
             <div class="step-detail">All terminals connect directly to the underground station. Follow blue train signs downstairs — well signposted in English, Chinese, and Korean.</div>
@@ -8624,7 +8253,7 @@ h2.section-title {
           </div>
         </div>
         <div class="step-row">
-          <div class="step-dot">·</div>
+          <div class="step-dot">🌲</div>
           <div>
             <div class="step-action">Walk 1 minute north from Exit 1 — MoriKoYa on your right</div>
             <div class="step-detail">Turn left out of the exit onto Kototoi-dori. Look for the dark cypress wood facade and warm lantern. You've arrived.</div>
@@ -8644,7 +8273,7 @@ h2.section-title {
       </div>
       <div class="route-body">
         <div class="step-row">
-          <div class="step-dot"></div>
+          <div class="step-dot">✈</div>
           <div>
             <div class="step-action">Head to Keikyu Airport Line station — in the terminal basement</div>
             <div class="step-detail">No outdoor walking needed. The Keikyu station is directly attached to the International Terminal. Follow signs for Keikyu Line / 京急線.</div>
@@ -8659,7 +8288,7 @@ h2.section-title {
           </div>
         </div>
         <div class="step-row">
-          <div class="step-dot">·</div>
+          <div class="step-dot">🌲</div>
           <div>
             <div class="step-action">Walk 8 min northwest from Toei Asakusa Exit A4 — or take a ¥700 taxi</div>
             <div class="step-detail">Walk north on Kokusai-dori toward Nishi-Asakusa. Alternatively a single short taxi hop is easy if you have large luggage — ¥700–900.</div>
@@ -8706,7 +8335,7 @@ h2.section-title {
 
   <div class="taxi-grid">
     <div class="taxi-card">
-      
+      <span class="taxi-icon">🚕</span>
       <div class="taxi-name">Taxi Fare Guide</div>
       <p class="taxi-body">
         <strong>From Narita Airport:</strong> ¥22,000–30,000 · ~70 min<br>
@@ -8719,7 +8348,7 @@ h2.section-title {
       </p>
     </div>
     <div class="taxi-card">
-      
+      <span class="taxi-icon">📱</span>
       <div class="taxi-name">Recommended Apps</div>
       <p class="taxi-body">
         <strong>GO (ゴー):</strong> Japan's best taxi app. English interface, upfront pricing, card payment. Download before arrival.<br><br>
@@ -8729,7 +8358,7 @@ h2.section-title {
       </p>
     </div>
     <div class="taxi-card">
-      
+      <span class="taxi-icon">🚐</span>
       <div class="taxi-name">Private Car Service</div>
       <p class="taxi-body">
         We partner with an English-speaking private car service for all guest transport needs:<br><br>
@@ -8741,7 +8370,7 @@ h2.section-title {
       </p>
     </div>
     <div class="taxi-card">
-      
+      <span class="taxi-icon">🅿️</span>
       <div class="taxi-name">Parking Near Hotel</div>
       <p class="taxi-body">
         MoriKoYa has no on-site parking. Central Asakusa parking is expensive. We recommend train travel during your stay.<br><br>
@@ -8761,7 +8390,7 @@ h2.section-title {
       <div style="font-size:13.5px;color:var(--light);margin-top:8px">Please drop me at MoriKoYa Hotel, Nishi-Asakusa 3-20-13, Taito-ku</div>
     </div>
     <div>
-      <button class="copy-btn" onclick="cp(this,'東京都台東区西浅草3丁目20番13号 森小屋ホテル前')">Copy Japanese Address</button>
+      <button class="copy-btn" onclick="cp(this,'東京都台東区西浅草3丁目20番13号 森小屋ホテル前')">📋 Copy Japanese Address</button>
     </div>
   </div>
 </section>
@@ -8775,7 +8404,7 @@ h2.section-title {
   </div>
 
   <div class="zone-label">
-    <span>On Foot — No Train Needed · 徒歩圏内</span>
+    <span>🚶 On Foot — No Train Needed · 徒歩圏内</span>
     <span style="color:rgba(196,160,96,.5)">Within 12 minutes</span>
   </div>
   <div class="attr-grid" style="margin-bottom:2px">
@@ -8788,7 +8417,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Senso-ji Temple</div>
         <div class="attr-jp">浅草寺</div>
-        <div class="attr-time-row">2 min walk · Free · Open 24hrs</div>
+        <div class="attr-time-row">🕐 2 min walk · Free · Open 24hrs</div>
         <p class="attr-desc">Tokyo's most visited temple — best experienced at dawn before the crowds. Incense smoke, the five-storey pagoda, and morning silence. We provide a dawn walk map at check-in.</p>
       </div>
     </div>
@@ -8801,7 +8430,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Kaminarimon Gate</div>
         <div class="attr-jp">雷門</div>
-        <div class="attr-time-row">5 min walk · Free</div>
+        <div class="attr-time-row">🕐 5 min walk · Free</div>
         <p class="attr-desc">The iconic thunder gate with its 700kg red lantern. Best photographed at 6am when the whole street belongs to you. Nakamise shopping arcade leads directly to Senso-ji beyond.</p>
       </div>
     </div>
@@ -8814,7 +8443,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Nakamise Shopping Street</div>
         <div class="attr-jp">仲見世通り</div>
-        <div class="attr-time-row">5 min walk · Shops from 9am</div>
+        <div class="attr-time-row">🕐 5 min walk · Shops from 9am</div>
         <p class="attr-desc">250 metres of traditional craft shops, ningyo-yaki sweets, folding fans, and handmade souvenirs. Most shopkeepers have served customers here for multiple generations.</p>
       </div>
     </div>
@@ -8827,7 +8456,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Sumida River Walk</div>
         <div class="attr-jp">隅田川テラス</div>
-        <div class="attr-time-row">8 min walk · Free</div>
+        <div class="attr-time-row">🕐 8 min walk · Free</div>
         <p class="attr-desc">A beautiful riverside promenade lined with cherry trees. Take the water bus from Asakusa Pier to Hamarikyu Gardens — a uniquely Tokyo experience. Extraordinary during cherry blossom season.</p>
       </div>
     </div>
@@ -8840,7 +8469,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Asakusa View Observatory</div>
         <div class="attr-jp">浅草文化観光センター</div>
-        <div class="attr-time-row">6 min walk · Free</div>
+        <div class="attr-time-row">🕐 6 min walk · Free</div>
         <p class="attr-desc">Eight-floor building with a free rooftop observation deck overlooking Kaminarimon and Senso-ji. The views at dusk — Skytree silhouetted against a pink sky — are unforgettable.</p>
       </div>
     </div>
@@ -8853,7 +8482,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Hoppy Street Izakayas</div>
         <div class="attr-jp">ホッピー通り</div>
-        <div class="attr-time-row">10 min walk · Evenings</div>
+        <div class="attr-time-row">🕐 10 min walk · Evenings</div>
         <p class="attr-desc">A lantern-lit alley of standing bars with yakitori smoke and Tokyo's oldest drinking culture. Order Hoppy (a non-alcoholic beer-like drink) with shochu. The real Asakusa.</p>
       </div>
     </div>
@@ -8861,7 +8490,7 @@ h2.section-title {
   </div>
 
   <div class="zone-label" style="margin-top:2px">
-    <span>By Train — Under 45 Minutes · 電車で45分以内</span>
+    <span>🚃 By Train — Under 45 Minutes · 電車で45分以内</span>
     <span style="color:rgba(196,160,96,.5)">Easy day trips</span>
   </div>
   <div class="attr-grid" style="margin-bottom:52px">
@@ -8874,7 +8503,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Akihabara</div>
         <div class="attr-jp">秋葉原</div>
-        <div class="attr-time-row">8 min · TX Line direct</div>
+        <div class="attr-time-row">🚃 8 min · TX Line direct</div>
         <p class="attr-desc">Electronics, anime, retro gaming, and maid cafés. The most direct connection from MoriKoYa — one stop on the Tsukuba Express. Explore on the way back from the airport.</p>
       </div>
     </div>
@@ -8887,7 +8516,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Ueno Park &amp; Museums</div>
         <div class="attr-jp">上野公園</div>
-        <div class="attr-time-row">15 min · Ginza Line (1 stop)</div>
+        <div class="attr-time-row">🚃 15 min · Ginza Line (1 stop)</div>
         <p class="attr-desc">Tokyo National Museum, Tokyo Zoo, and Japan's most famous cherry blossom park in a single neighbourhood. The museum's Japanese Gallery alone warrants an entire morning.</p>
       </div>
     </div>
@@ -8900,7 +8529,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Tokyo Skytree</div>
         <div class="attr-jp">東京スカイツリー</div>
-        <div class="attr-time-row">15 min · Toei Line to Oshiage</div>
+        <div class="attr-time-row">🚃 15 min · Toei Line to Oshiage</div>
         <p class="attr-desc">World's second-tallest structure. Tembo Deck at 350m — on clear days, Mt. Fuji visible to the west. Book tickets online in advance to avoid queues.</p>
       </div>
     </div>
@@ -8913,7 +8542,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">teamLab Planets TOKYO</div>
         <div class="attr-jp">チームラボプラネッツ東京</div>
-        <div class="attr-time-row">35 min · TX → Toyosu</div>
+        <div class="attr-time-row">🚃 35 min · TX → Toyosu</div>
         <p class="attr-desc">Barefoot through immersive digital art installations — infinite reflections, floating flowers, water rooms. Sells out weeks in advance. Book immediately after confirming travel dates.</p>
       </div>
     </div>
@@ -8926,7 +8555,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Shibuya Crossing</div>
         <div class="attr-jp">渋谷スクランブル交差点</div>
-        <div class="attr-time-row">35 min · Ginza Line direct</div>
+        <div class="attr-time-row">🚃 35 min · Ginza Line direct</div>
         <p class="attr-desc">The world's busiest pedestrian crossing — best viewed from Scramble Square's observation deck at night. The surrounding area has Tokyo's best contemporary restaurants and nightlife.</p>
       </div>
     </div>
@@ -8939,7 +8568,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Tokyo Disney Resort</div>
         <div class="attr-jp">東京ディズニーリゾート</div>
-        <div class="attr-time-row">45 min · TX → Maihama</div>
+        <div class="attr-time-row">🚃 45 min · TX → Maihama</div>
         <p class="attr-desc">Disneyland and DisneySea — the latter widely considered the most beautifully designed Disney park on earth. Book tickets via official app only. Early arrival strongly recommended.</p>
       </div>
     </div>
@@ -8952,7 +8581,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Toyosu Fish Market</div>
         <div class="attr-jp">豊洲市場</div>
-        <div class="attr-time-row">35 min · TX → Shin-Kiba</div>
+        <div class="attr-time-row">🚃 35 min · TX → Shin-Kiba</div>
         <p class="attr-desc">Tokyo's wholesale fish market. Tuna auctions at 5:30am require advance reservation (Tokyo Metropolitan website). Sushi breakfast at the market-side restaurants is essential and extraordinary.</p>
       </div>
     </div>
@@ -8965,7 +8594,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Shinjuku Gyoen Garden</div>
         <div class="attr-jp">新宿御苑</div>
-        <div class="attr-time-row">30 min · TX to Shinjuku</div>
+        <div class="attr-time-row">🚃 30 min · TX to Shinjuku</div>
         <p class="attr-desc">58 hectares of English, French, and Japanese landscape gardens. Tokyo's finest cherry blossom viewing from late March. Alcohol is permitted — rare for a public park in Japan.</p>
       </div>
     </div>
@@ -8978,7 +8607,7 @@ h2.section-title {
       <div class="attr-body">
         <div class="attr-name">Imperial Palace Gardens</div>
         <div class="attr-jp">皇居東御苑</div>
-        <div class="attr-time-row">25 min · TX → Tokyo Sta.</div>
+        <div class="attr-time-row">🚃 25 min · TX → Tokyo Sta.</div>
         <p class="attr-desc">The East Gardens of the Imperial Palace — free entry, extraordinary moat views, and ancient stone walls. Combine with the Marunouchi luxury shopping district and the Tokyo International Forum.</p>
       </div>
     </div>
@@ -9144,21 +8773,21 @@ h2.section-title {
       <div class="walk-num">1</div>
       <div>
         <div class="walk-text"><strong>Exit TX Asakusa Station — Exit 1 (地上出口1番)</strong><br>Take stairs or elevator to street level. You emerge onto Kototoi-dori, a wide tree-lined avenue with a konbini on your left.</div>
-        <div class="walk-dist">Start point · GPS 35.7120°N, 139.7940°E</div>
+        <div class="walk-dist">📍 Start point · GPS 35.7120°N, 139.7940°E</div>
       </div>
     </div>
     <div class="walk-step">
       <div class="walk-num">2</div>
       <div>
         <div class="walk-text"><strong>Turn left (north) on Kototoi-dori</strong><br>Walk straight ahead on the wide pavement. No turns required. Pass the konbini on your left — good for stocking up on drinks and snacks for your first evening.</div>
-        <div class="walk-dist">30 seconds · approximately 60 metres</div>
+        <div class="walk-dist">🚶 30 seconds · approximately 60 metres</div>
       </div>
     </div>
     <div class="walk-step">
       <div class="walk-num">3</div>
       <div>
         <div class="walk-text"><strong>MoriKoYa 森小屋 — dark cypress wood facade on your right</strong><br>Look for the engraved 森 character and warm lantern light at the entrance. Use the doorbell or your digital key code. Welcome to your forest cabin.</div>
-        <div class="walk-dist">Arrived · 〒111-0035 西浅草3丁目20番13号</div>
+        <div class="walk-dist">🌲 Arrived · 〒111-0035 西浅草3丁目20番13号</div>
       </div>
     </div>
   </div>
@@ -9172,28 +8801,28 @@ h2.section-title {
       <div class="walk-num">1</div>
       <div>
         <div class="walk-text"><strong>Kaminarimon Gate (雷門) — Thunder Gate</strong><br>The great vermilion gate with the 700kg lantern. This is the symbolic entrance to old Asakusa — and you're walking through it. Best photographed at 6am before the crowds materialise.</div>
-        <div class="walk-dist">5 minutes from MoriKoYa (walking the route in reverse)</div>
+        <div class="walk-dist">🏮 5 minutes from MoriKoYa (walking the route in reverse)</div>
       </div>
     </div>
     <div class="walk-step">
       <div class="walk-num">2</div>
       <div>
         <div class="walk-text"><strong>Walk the full length of Nakamise-dori (仲見世通り)</strong><br>250 metres of traditional craft shops. Try the ningyo-yaki sweet cakes (¥200 each, fresh from the iron mould) and browse the folding fans and textiles. Shops open from 9:00am.</div>
-        <div class="walk-dist">4 minutes walking</div>
+        <div class="walk-dist">🏪 4 minutes walking</div>
       </div>
     </div>
     <div class="walk-step">
       <div class="walk-num">3</div>
       <div>
         <div class="walk-text"><strong>Senso-ji Main Hall (浅草寺本堂)</strong><br>Pause in the courtyard. Burn incense. Pull an omikuji fortune slip (¥100). Ring the bell and bow twice. The five-storey pagoda is extraordinary in mist and morning light.</div>
-        <div class="walk-dist">2 minutes from MoriKoYa</div>
+        <div class="walk-dist">⛩ 2 minutes from MoriKoYa</div>
       </div>
     </div>
     <div class="walk-step">
       <div class="walk-num">4</div>
       <div>
         <div class="walk-text"><strong>Turn left (west) through Nishi-Asakusa back streets</strong><br>The quieter residential streets of western Asakusa. Small galleries, traditional lacquerware shops, and neighbourhood coffee bars that have been there for decades. This is our favourite part of the neighbourhood.</div>
-        <div class="walk-dist">3 minutes further — MoriKoYa on Kototoi-dori</div>
+        <div class="walk-dist">🌿 3 minutes further — MoriKoYa on Kototoi-dori</div>
       </div>
     </div>
   </div>
@@ -9221,7 +8850,7 @@ h2.section-title {
         <strong>Check-in:</strong> 3:00pm (15:00) &nbsp;·&nbsp; <strong>Check-out:</strong> 11:00am<br><br>
         <strong>Early check-in</strong> (from 11:00am) is available for ¥8,000 subject to availability — please request at booking. <strong>Late check-out</strong> (until 2:00pm) is ¥8,000, also subject to availability.<br><br>
         If you arrive before 3pm, we store your luggage securely and provide neighbourhood recommendations, coffee shop cards, and our morning walk map to fill the time beautifully.
-        <div class="faq-note">Our recommendation: arrive the evening before a major sightseeing day — wake up 2 minutes from Senso-ji at dawn with the whole temple to yourself.</div>
+        <div class="faq-note">💡 Our recommendation: arrive the evening before a major sightseeing day — wake up 2 minutes from Senso-ji at dawn with the whole temple to yourself.</div>
       </div>
     </div>
 
@@ -9264,7 +8893,7 @@ h2.section-title {
         <strong>Step 3 —</strong> Walk 1 minute from TX Exit 1 · Total door-to-door: ~65 minutes<br><br>
         Alternative: <strong>Airport Limousine Bus</strong> to Asakusa/Skytree area — ¥3,100, ~75–100 min depending on traffic. Comfortable with large luggage.<br><br>
         Taxi from Narita: ¥22,000–30,000 — only recommended for groups of 4+ sharing the cost.
-        <div class="faq-note">Download the <strong>GO Taxi app</strong> before you land — English interface, card payment, works everywhere in Japan.</div>
+        <div class="faq-note">📱 Download the <strong>GO Taxi app</strong> before you land — English interface, card payment, works everywhere in Japan.</div>
       </div>
     </div>
 
@@ -9360,7 +8989,7 @@ h2.section-title {
       <div class="faq-a">
         <strong>Included for all guests at no additional charge:</strong>
         <ul>
-          <li><strong>Curated Breakfast Guide</strong> — handcrafted neighbourhood map for morning dining like a local</li>
+          <li><strong>Kaiseki Breakfast</strong> — served in-suite or private dining room, daily</li>
           <li><strong>Asakusa Morning Walk Map</strong> — hand-drawn, updated seasonally by our team</li>
           <li><strong>Yukata &amp; wooden geta sandals</strong> — to wear throughout your stay and in the neighbourhood</li>
           <li><strong>Hinoki onsen bath set</strong> — traditional bath salts, handmade wooden ladle, and instructions</li>
@@ -9369,7 +8998,7 @@ h2.section-title {
         <ul>
           <li>Matcha Tea Ceremony (裏千家式) — ¥12,000/person</li>
           <li>Private Asakusa Walking Tour (English guide) — ¥18,000/group</li>
-          <li>Private Dining Experience — ¥28,000/person (arranged on request)</li>
+          <li>Kaiseki Dinner — ¥28,000/person</li>
           <li>Ikebana Flower Arranging — ¥15,000/person</li>
         </ul>
       </div>
@@ -9383,12 +9012,12 @@ h2.section-title {
       </button>
       <div class="faq-a">
         Every season in Asakusa is distinct — here are our honest assessments:<br><br>
-        <strong>Spring (March–April):</strong> Cherry blossoms along Sumida River. Extraordinary but very busy. Book 6+ months ahead. Prices peak in late March to early April.<br><br>
-        <strong>Early Summer (May–June):</strong> Fewer tourists, warm evenings, lush green. Our personal favourite season — the neighbourhood feels most authentically alive.<br><br>
-        <strong>Summer (July–August):</strong> Sumida River Fireworks (one of Japan's best). Hot and humid — the deep soaking bath and air conditioning become your best friends.<br><br>
-        <strong>Autumn (October–November):</strong> Perfect temperature, golden foliage. Second busiest. Nikko's autumn leaves are at their best in early November.<br><br>
-        <strong>Winter (December–February):</strong> Cold but uncrowded, excellent value. New Year's Hatsumode (初詣) at Senso-ji — millions visit on January 1–3, the atmosphere is electric.
-        <div class="faq-note">Avoid Golden Week (April 29–May 5) if possible — all of Japan travels simultaneously and prices peak significantly across transport and accommodation.</div>
+        <strong>🌸 Spring (March–April):</strong> Cherry blossoms along Sumida River. Extraordinary but very busy. Book 6+ months ahead. Prices peak in late March to early April.<br><br>
+        <strong>☀️ Early Summer (May–June):</strong> Fewer tourists, warm evenings, lush green. Our personal favourite season — the neighbourhood feels most authentically alive.<br><br>
+        <strong>🌻 Summer (July–August):</strong> Sumida River Fireworks (one of Japan's best). Hot and humid — the hinoki bath and air conditioning become your best friends.<br><br>
+        <strong>🍁 Autumn (October–November):</strong> Perfect temperature, golden foliage. Second busiest. Nikko's autumn leaves are at their best in early November.<br><br>
+        <strong>❄️ Winter (December–February):</strong> Cold but uncrowded, excellent value. New Year's Hatsumode (初詣) at Senso-ji — millions visit on January 1–3, the atmosphere is electric.
+        <div class="faq-note">📅 Avoid Golden Week (April 29–May 5) if possible — all of Japan travels simultaneously and prices peak significantly across transport and accommodation.</div>
       </div>
     </div>
 
@@ -9416,19 +9045,19 @@ h2.section-title {
 
 <div class="booking-strip">
   <div>
-    <div class="bs-icon"></div>
+    <div class="bs-icon">✉</div>
     <div class="bs-title">Contact the Concierge</div>
     <p class="bs-desc">Our team responds in English, 日本語, and 中文 within 2 hours on weekdays. We handle restaurant reservations, day-trip planning, and any pre-arrival questions — all in Japanese, on your behalf.</p>
     <span class="bs-cta"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3daddd5dcf3dedcc1dad8dccad29dd9c3">[email&#160;protected]</a> →</span>
   </div>
   <div>
-    <div class="bs-icon"></div>
+    <div class="bs-icon">📞</div>
     <div class="bs-title">Line &amp; WhatsApp</div>
     <p class="bs-desc">For real-time support en route to the hotel, we're available via LINE and WhatsApp 24 hours. Share your flight number at booking and we monitor arrival delays automatically.</p>
     <span class="bs-cta">Contact details sent at booking →</span>
   </div>
   <div>
-    <div class="bs-icon"></div>
+    <div class="bs-icon">🌲</div>
     <div class="bs-title">Reserve Your Suite</div>
     <p class="bs-desc">Book directly with us for the best available rate, guaranteed. Direct guests receive complimentary early luggage storage, welcome gift, and personalised day-trip planning.</p>
     <span class="bs-cta">morikoya.com/reserve →</span>
@@ -9501,10 +9130,10 @@ h2.section-title {
 
 <div class="tab-nav">
   <button class="tab-btn active" onclick="aboutSw('story',this)">✦ Our Story</button>
-  <button class="tab-btn" onclick="aboutSw('philosophy',this)">Philosophy</button>
-  <button class="tab-btn" onclick="aboutSw('property',this)">The Property</button>
-  <button class="tab-btn" onclick="aboutSw('team',this)">Our Team</button>
-  <button class="tab-btn" onclick="aboutSw('faq',this)">FAQ</button>
+  <button class="tab-btn" onclick="aboutSw('philosophy',this)">⛩ Philosophy</button>
+  <button class="tab-btn" onclick="aboutSw('property',this)">🏠 The Property</button>
+  <button class="tab-btn" onclick="aboutSw('team',this)">👥 Our Team</button>
+  <button class="tab-btn" onclick="aboutSw('faq',this)">❓ FAQ</button>
 </div>
 
 <!-- ═══════ OUR STORY ═══════ -->
@@ -9538,7 +9167,7 @@ h2.section-title {
     <div class="stat-item">
       <div class="stat-num">14</div>
       <div class="stat-label">Independent Suites</div>
-      <div class="stat-sub">6×39㎡+ · 7×42㎡+ · 1×65㎡+</div>
+      <div class="stat-sub">6×30㎡+ · 7×40㎡+ · 1×60㎡+</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">60㎡</div>
@@ -9564,7 +9193,7 @@ h2.section-title {
       <ul class="hl-list dk">
         <li>Full kitchen — cook sushi from the Life Supermarket sashimi counter next door</li>
         <li>Private hinoki onsen in every suite — no shared bath, no booking slots</li>
-        <li>Curated neighbourhood breakfast guide — not a map, a handwritten morning itineraryese morning</li>
+        <li>Kaiseki breakfast included — not a continental tray, a proper Japanese morning</li>
         <li>Staff call restaurants in Japanese — we handle the reservations you can't make</li>
         <li>Tatami room + modern amenities — wabi-sabi aesthetics with good WiFi</li>
         <li>12 suites only — we know every guest by name before they arrive</li>
@@ -9711,7 +9340,7 @@ h2.section-title {
       <ul style="list-style:none;display:flex;flex-direction:column;gap:9px;">
         <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span>Private <strong style="color:var(--navy);">hinoki (檜) onsen</strong> with thermostat control</span></li>
         <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span><strong style="color:var(--navy);">Full kitchen</strong> — IH cooktop, fridge, rice cooker, full dishware</span></li>
-        <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span><strong style="color:var(--navy);">Neighbourhood Breakfast Guide</strong> included with every stay</span></li>
+        <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span><strong style="color:var(--navy);">Kaiseki breakfast</strong> included in nightly rate</span></li>
         <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span><strong style="color:var(--navy);">Tatami area</strong> with traditional floor cushions</span></li>
         <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span><strong style="color:var(--navy);">Yukata set</strong> for all guests on arrival</span></li>
         <li style="font-size:14px;color:var(--mid);display:flex;gap:10px;"><span style="color:var(--cedar);">—</span><span><strong style="color:var(--navy);">Balcony</strong> overlooking Nishi-Asakusa street</span></li>
@@ -9838,7 +9467,7 @@ h2.section-title {
 
     <!-- GROUP 1: Rooms & Suites -->
     <div class="faq-group">
-      <div class="faq-group-title">Rooms & Suites · 客室について</div>
+      <div class="faq-group-title">🏠 Rooms & Suites · 客室について</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -9882,7 +9511,7 @@ h2.section-title {
           Is breakfast included? <span class="faq-icon">+</span>
         </button>
         <div class="faq-a">
-          Yes. A <strong>curated neighbourhood breakfast guide</strong> is included with every stay. This is a curated Japanese breakfast — not a continental tray. It typically includes seasonal miso soup, grilled fish or tamagoyaki, rice, pickles, tofu, and a seasonal side. The menu changes monthly based on what Yuki, our breakfast chef, sources from local markets. Served between 07:00–09:30 in your suite or in our ground-floor dining area.
+          Yes. <strong>Kaiseki breakfast is included</strong> in every nightly rate. This is a curated Japanese breakfast — not a continental tray. It typically includes seasonal miso soup, grilled fish or tamagoyaki, rice, pickles, tofu, and a seasonal side. The menu changes monthly based on what Yuki, our breakfast chef, sources from local markets. Served between 07:00–09:30 in your suite or in our ground-floor dining area.
         </div>
       </div>
 
@@ -9898,7 +9527,7 @@ h2.section-title {
 
     <!-- GROUP 2: Pricing & Booking -->
     <div class="faq-group">
-      <div class="faq-group-title">Pricing & Booking · 料金・予約について</div>
+      <div class="faq-group-title">💳 Pricing & Booking · 料金・予約について</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -9907,7 +9536,7 @@ h2.section-title {
         <div class="faq-a">
           <strong>2BR suites:</strong> USD $500–700/night (¥75,000–105,000 JPY), depending on season and length of stay.<br><br>
           <strong>3BR suite (9th floor):</strong> USD $800–900/night (¥120,000–135,000 JPY).<br><br>
-          Rates are per suite per night. Peak season (cherry blossom: late March–April; summer festivals: July; Golden Week; New Year) books 4–6 months in advance. We recommend booking directly for the best rate and flexibility.
+          Rates include kaiseki breakfast for all guests. Peak season (cherry blossom: late March–April; summer festivals: July; Golden Week; New Year) books 4–6 months in advance. We recommend booking directly for the best rate and flexibility.
         </div>
       </div>
 
@@ -9943,7 +9572,7 @@ h2.section-title {
 
     <!-- GROUP 3: Check-in / Check-out -->
     <div class="faq-group">
-      <div class="faq-group-title">Check-in & Check-out · チェックイン・アウト</div>
+      <div class="faq-group-title">🗝 Check-in & Check-out · チェックイン・アウト</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -9977,7 +9606,7 @@ h2.section-title {
 
     <!-- GROUP 4: The Onsen -->
     <div class="faq-group">
-      <div class="faq-group-title">The Hinoki Onsen · 檜風呂について</div>
+      <div class="faq-group-title">♨ The Hinoki Onsen · 檜風呂について</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -9985,7 +9614,7 @@ h2.section-title {
         </button>
         <div class="faq-a">
           <strong>Hinoki (檜)</strong> is Japanese cypress — one of the most prized woods in Japan for bath construction. It releases a naturally fragrant, antibacterial oil when wet, creating the distinctive scent of a traditional Japanese bath. The wood also retains heat exceptionally well, keeping the water warmer longer.<br><br>
-          Our private deep soaking baths are deep-soak tubs in the traditional Japanese style — designed to sit in, not lie down. Water temperature is thermostat-controlled. This is the bath experience that Japan's finest ryokan are famous for, in your private suite.
+          Our private hinoki baths are deep-soak tubs in the traditional Japanese style — designed to sit in, not lie down. Water temperature is thermostat-controlled. This is the bath experience that Japan's finest ryokan are famous for, in your private suite.
         </div>
       </div>
 
@@ -10008,7 +9637,7 @@ h2.section-title {
 
     <!-- GROUP 5: Children & Families -->
     <div class="faq-group">
-      <div class="faq-group-title">Families & Children · ご家族・お子様</div>
+      <div class="faq-group-title">👨‍👩‍👧 Families & Children · ご家族・お子様</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -10040,7 +9669,7 @@ h2.section-title {
 
     <!-- GROUP 6: Services -->
     <div class="faq-group">
-      <div class="faq-group-title">Guest Services · ゲストサービス</div>
+      <div class="faq-group-title">✉ Guest Services · ゲストサービス</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -10103,7 +9732,7 @@ h2.section-title {
 
     <!-- GROUP 7: Policies -->
     <div class="faq-group">
-      <div class="faq-group-title">Policies · ルール・ポリシー</div>
+      <div class="faq-group-title">📋 Policies · ルール・ポリシー</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -10172,7 +9801,7 @@ h2.section-title {
 
 <div class="final-cta">
   <h2>Fourteen suites in old Tokyo</h2>
-  <p>MoriKoYa. Nishi-Asakusa. Private balcony, full kitchen, in-suite washer/dryer. Five minutes from Senso-ji.</p>
+  <p>MoriKoYa. Nishi-Asakusa. Private hinoki onsen, full kitchen, kaiseki breakfast, five minutes from Senso-ji.</p>
   <button class="cta-btn">Check availability</button>
   <button class="cta-btn2">Plan your stay</button>
 </div>
@@ -10333,22 +9962,7 @@ function showPage(pageId, scrollTo) {
       if (t) t.scrollIntoView({ behavior: 'smooth' });
     }, 80);
   }
-  try { history.pushState(null, '', '#' + targetPage); } catch(e) {}
-  // ALWAYS ensure first section is visible when switching pages
-  if (el) {
-    var secs = el.querySelectorAll('.section');
-    if (secs.length > 0) {
-      secs.forEach(function(s){
-        s.classList.remove('active');
-        s.style.display = 'none';
-      });
-      secs[0].classList.add('active');
-      secs[0].style.display = 'block';
-      var btns = el.querySelectorAll('.tab-btn');
-      btns.forEach(function(b){ b.classList.remove('active'); });
-      if (btns.length > 0) btns[0].classList.add('active');
-    }
-  }
+  history.pushState(null, '', '#' + targetPage);
 }
 
 window.addEventListener('popstate', () => {
@@ -11129,3 +10743,51 @@ function goToNeighbourhoodTab(tabId) {
 })();
 
 </script>
+
+<!-- Back to top -->
+<a class="btt" id="btt" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Back to top">↑</a>
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── Toast ── */
+function showToast(msg,dur){
+  var t=document.getElementById('toast');if(!t)return;
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},dur||2200);
+}
+/* ── Back to top ── */
+var bttEl=document.getElementById('btt');
+window.addEventListener('scroll',function(){
+  if(bttEl)bttEl.classList.toggle('visible',window.scrollY>500);
+},{passive:true});
+/* ── Auto-set booking dates ── */
+(function(){
+  var today=new Date(),cout=new Date(today);cout.setDate(cout.getDate()+3);
+  var fmt=function(d){return d.toISOString().split('T')[0];};
+  var ins=document.querySelectorAll('.hw-input[type="date"]');
+  if(ins[0]){ins[0].value=fmt(today);ins[0].min=fmt(today);}
+  if(ins[1]){ins[1].value=fmt(cout);ins[1].min=fmt(cout);}
+  if(ins[0]&&ins[1])ins[0].addEventListener('change',function(){
+    var nm=new Date(this.value);nm.setDate(nm.getDate()+1);
+    ins[1].min=fmt(nm);
+    if(ins[1].value<=this.value){nm.setDate(nm.getDate()+2);ins[1].value=fmt(nm);}
+  });
+})();
+/* ── Nav shrink on scroll ── */
+var navMain=document.getElementById('mainNav');
+window.addEventListener('scroll',function(){
+  if(navMain)navMain.classList.toggle('scrolled',window.scrollY>60);
+},{passive:true});
+/* ── Fix cp() with toast ── */
+function cp(btn,text){
+  var done=function(){showToast('Address copied ✓');};
+  if(navigator.clipboard){navigator.clipboard.writeText(text).then(done);}
+  else{var ta=document.createElement('textarea');ta.value=text;ta.style.cssText='position:fixed;top:-9999px';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);done();}
+}
+
+/* ── Safe closeMobileNav (desktop doesn't have drawer) ── */
+function closeMobileNav() {
+  var drawer  = document.getElementById('mobileNavDrawer');
+  var overlay = document.getElementById('mobileNavOverlay');
+  var burger
